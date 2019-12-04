@@ -33,35 +33,22 @@ export default class CreateCard extends Component {
     render(){
         return(
             <div>
-                <table id="table" style={{textAlign:'center'}}>
+                <table id="table" className="table" >
                     <tbody>
-                        <tr>
-                            <td><input id="rempno" placeholder="Their Employee Number"></input></td>
-                        </tr>
-                        <tr>
-                            <td><input id="rname" placeholder="Their Name"></input></td>
-                        </tr>
-                        <tr>
-                            <td><input id="rmempno" placeholder="Their Manager's Employee Number"></input></td>
-                        </tr>
-                        <tr>
-                            <td><input id="sempno" placeholder="Your Employee Number"></input></td>
-                        </tr>
-                        <tr>
-                            <td><input id="sname" placeholder="Your Name"></input></td>
-                        </tr>
-                        <tr>
-                            <td><input id="category" placeholder="Letter of PRIDE"></input></td>
-                        </tr>
-                        <tr>
-                            <td><input id="senddate" placeholder="Today's Date in format YYYY-MM-DD"></input></td>
-                        </tr>
-                        <tr>
-                            <td><input id="message" placeholder="Your Message"></input></td>
-                        </tr>
-                        <tr>
-                            <td><input id="picurl" placeholder="URL of Their Picture"></input></td>
-                        </tr>
+                        <tr> <td>To: <input id="rempno" placeholder="Their Employee Number"></input></td>    </tr>
+
+                          <tr><td>Recognising:
+                          <span class="dropdown"> <button className="button1">P</button> <span class="dropdown-content"> <p>Putting members first.</p></span> </span>
+                          <span class="dropdown"> <button className="button1">R</button> <span class="dropdown-content"> <p>Rising to the challenge.</p></span> </span>
+                          <span class="dropdown"> <button className="button1">I</button> <span class="dropdown-content"> <p>Inspiring trust.</p></span>  </span>
+                          <span class="dropdown"> <button className="button1">D</button> <span class="dropdown-content"> <p>Doing the right thing.</p></span> </span>
+                          <span class="dropdown"> <button className="button1">E</button> <span class="dropdown-content"> <p>Excelling at relationships.</p></span> </span>
+                          </td></tr>
+                              <tr>  <td>
+
+
+                              Comment: <textarea className="textbox" id="message" placeholder="Your Message"></textarea></td></tr
+
                         <tr>
                             <td><button id="newbutton" onClick={()=>this.addCard()}>Create New Card</button></td>
                         </tr>
@@ -71,3 +58,4 @@ export default class CreateCard extends Component {
         )
     }
 }
+

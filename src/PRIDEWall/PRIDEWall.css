@@ -1,0 +1,72 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    background-color: lightgrey;
+
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+
+  .prideletter {
+      font-size: large;
+      text-align: center;
+      background-color: blue;
+      border-radius: 16px;
+      color: white;
+      width: 80px;
+      height: 60px;
+      margin: 3px;
+  }
+
+  .new-card{
+    width: 342px;
+    background-color: lightgrey!important;
+  }
+
+  .employee-image{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 70%!important;
+    margin: 3px
+  }
+  /* .carousel-item-active {
+      background-color: lightgrey;
+  } */
+  .carousel{
+      height:150px;
+      background-color: lightgrey;
+      margin-top: 25px;
+  }
+
+  /*Isaac code */
+  .button1 {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: darkblue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px blue;
+  }
+
+  .button1:hover{
+    background-color: blue;
+  }
+  .button1:active {
+    background-color: #blue;
+    box-shadow: 0 5px #darkblue;
+    transform: translateY(4px);
+  }
