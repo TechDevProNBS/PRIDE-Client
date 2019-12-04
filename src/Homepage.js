@@ -3,7 +3,6 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import PRIDEWall from './PRIDEWall/PRIDEWall';
 import MyPRIDEWall from './MyPRIDE/MyPRIDEWall';
 import CreateCard from './CreateCard/CreateCard';
-
 import './Homepage.css';
 
 export default class HomePage extends React.Component{
@@ -18,11 +17,11 @@ export default class HomePage extends React.Component{
                     <Link to='/MyPRIDEWall'>MyPRIDE</Link>
 
   </div>
+
                     <div>
                         <Route exact path='/PRIDEWall' component={PRIDEWall}/>
                         <Route exact path='/MyPRIDEWall' component={MyPRIDEWall}/>
                         <Route exact path='/CreateCard' component={CreateCard}/>
-
                     </div>
                 </Router>
             </div>

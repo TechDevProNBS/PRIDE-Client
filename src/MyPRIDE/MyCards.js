@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProgressBar from 'react-bootstrap/ProgressBar'
+import Bar from 'react-bootstrap/ProgressBar'
 
 
 export default class ShowAllThisEmployee extends Component {
