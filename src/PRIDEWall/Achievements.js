@@ -9,7 +9,7 @@ export default class Achievements extends Component {
   }
 
     componentDidMount=()=> {
-    fetch('http://localhost:9001/findAllAchievementsThisMonth')
+    fetch('http://localhost:9001/emp_achievements/P430221/1/5/2/1/1')
         .then(response => response.json())
         .then(data => {
           this.setState({
