@@ -8,16 +8,15 @@ import './Homepage.css';
 export default class HomePage extends React.Component{
     render(){
         return(
-            <div >
+            <div>
+           
                 <Router>
-                <div className="navbar">
-                    <Link to='/'>Login</Link>
+                    <div className="navbar">
+                    <Link to='/'>Home</Link>
                     <Link to='/PRIDEWall'>PRIDE Wall</Link>
-                    <Link to='/CreateCard'>Send a PRIDE card</Link>
                     <Link to='/MyPRIDEWall'>MyPRIDE</Link>
-
-  </div>
-
+                    <Link to='/CreateCard'>Create Card</Link>
+                    </div>
                     <div>
                         <Route exact path='/PRIDEWall' component={PRIDEWall}/>
                         <Route exact path='/MyPRIDEWall' component={MyPRIDEWall}/>

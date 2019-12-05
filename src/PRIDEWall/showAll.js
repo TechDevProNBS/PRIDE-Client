@@ -17,7 +17,7 @@ export default class ShowAllThisMonth extends Component {
           })
         })
     }
-
+    
     render(){
         return(
             <div>

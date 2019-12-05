@@ -3,16 +3,16 @@
     transition: 0.3s;
     width: 40%;
     background-color: lightgrey;
-
+    
   }
-
+  
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
-
+  
   .container {
     margin-top: 20px;
-  }
+  } 
 
   .prideletter {
       font-size: large;
@@ -41,32 +41,15 @@
       background-color: lightgrey;
   } */
   .carousel{
-      height:150px;
-      background-color: lightgrey;
-      margin-top: 25px;
+    height:50px;
+    margin-top: 25px;
   }
-
-  /*Isaac code */
-  .button1 {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 30px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: white;
-    background-color: darkblue;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px blue;
+  .carousel-inner{
+    background-color: lightgrey;
+    height:150px;
+    margin-top: 25px;
+    text-align: center;   
   }
-
-  .button1:hover{
-    background-color: blue;
-  }
-  .button1:active {
-    background-color: #blue;
-    box-shadow: 0 5px #darkblue;
-    transform: translateY(4px);
+  .carousel-next{
+      color: lightgrey;
   }
