@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 export default class CreateCard extends Component {
   constructor() {
     super()
@@ -44,11 +45,8 @@ export default class CreateCard extends Component {
                           <span class="dropdown"> <button className="button1">D</button> <span class="dropdown-content"> <p>Doing the right thing.</p></span> </span>
                           <span class="dropdown"> <button className="button1">E</button> <span class="dropdown-content"> <p>Excelling at relationships.</p></span> </span>
                           </td></tr>
-                              <tr>  <td>
-
-
-                              Comment: <textarea className="textbox" id="message" placeholder="Your Message"></textarea></td></tr
-
+                        <tr>  <td>
+                              Comment: <textarea className="textbox" id="message" placeholder="Your Message"></textarea></td></tr>
                         <tr>
                             <td><button id="newbutton" onClick={()=>this.addCard()}>Create New Card</button></td>
                         </tr>
@@ -58,4 +56,3 @@ export default class CreateCard extends Component {
         )
     }
 }
-
