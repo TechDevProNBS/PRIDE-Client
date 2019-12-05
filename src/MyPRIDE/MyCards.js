@@ -32,16 +32,16 @@ export default class ShowAllThisEmployee extends Component {
                     <div className="div1"><img src="favicon.ico" alt="favicon"></img>
 
 { /* First card */}
-                    
+
                     </div>
 { /* Progress Card */}
 
-                      {/* <div className="div2">
+                       <div className="div2">
                         <ProgressBar>
                           <ProgressBar striped variant="danger" label={35} animated now={35} key={1} />
                           <ProgressBar  variant="secondary"  label={65} animated now={65} key={2} />
                         </ProgressBar>
-                    </div> */}
+                    </div>
 
 
                 <div>
