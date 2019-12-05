@@ -29,10 +29,10 @@ export default class ShowAllThisEmployee extends Component {
             <div>
                 <div>
                      <span>Welcome Isaac Douglas!</span>
-                    <div className="div1"><img src="favicon.ico" alt="favicon"></img><div className="div3">
-<span>My PRIDE Cards</span>
+                    <div className="div1"><img src="favicon.ico" alt="favicon"></img>
+
 { /* First card */}
-                    </div>
+                    
                     </div>
 { /* Progress Card */}
 
@@ -55,8 +55,9 @@ export default class ShowAllThisEmployee extends Component {
 </div>
                         <div>
                           <Route exact path='/PRIDEWall' component={PRIDEWall}/>
+                          <div className="div3">
                           <Route exact path='/Achievements' component={Achievements}/>
-
+                          </div>
                         </div>
                       </Router>
                 </div>
