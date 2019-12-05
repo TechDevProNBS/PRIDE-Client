@@ -47,7 +47,7 @@ export default class CreateCard extends Component {
                               <tr>  <td>
 
 
-                              Comment: <textarea className="textbox" id="message" placeholder="Your Message"></textarea></td></tr
+                              Comment: <textarea className="textbox" id="message" placeholder="Your Message"></textarea></td></tr>
 
                         <tr>
                             <td><button id="newbutton" onClick={()=>this.addCard()}>Create New Card</button></td>
