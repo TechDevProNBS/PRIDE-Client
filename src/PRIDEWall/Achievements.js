@@ -72,9 +72,8 @@ export default class Achievements extends Component {
                                        </ProgressBar>
                                       </div>
                                       </td>
-                                      <td style={{margin:'5px'}}>{each.progressbar}</td>
-                                      <td style={{margin:'5px'}}>{each.progressachieved}</td>
-                                      <td style={{margin:'5px'}}>{each.points} pp</td>
+
+                                      <td style={{margin:'5px'}}>{each.points}pp</td>
 
                                   </tr>
                               )
