@@ -167,6 +167,14 @@ body {
   right:38%;
   bottom:24%;
 }
+.div4 {
+  width: 350px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 16px;
+  
+  /* background-color: red; */
+}
 /*K.dot code */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
