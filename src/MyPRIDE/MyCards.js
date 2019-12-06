@@ -91,22 +91,21 @@ export default class ShowAllThisEmployee extends Component {
               <ProgressBar variant="secondary" label={65} animated now={65} key={2} />
             </ProgressBar>
           </div>
+                <div>
+                    <Router>
+                    <div class="sidenav">
+                        <Link to='/'>Login</Link>
+                        <Link to='/PRIDEWall'>PRIDE Wall</Link>
+                        <a href='/'>My Sent Cards</a>
+                        <Link to='/Achievements'>Milestones</Link>
+                        <a href='/'>Login</a>
+</div>
+                        <div>
+                          <Route exact path='/PRIDEWall' component={PRIDEWall}/>
+                          <Route exact path='/Achievements' component={Achievements}/>
 
-
-          <div>
-            <Router>
-              <div class="sidenav">
-                <Link to='/'>Login</Link>
-                <Link to='/PRIDEWall'>PRIDE Wall</Link>
-                <a href='/'>My Sent Cards</a>
-                <Link to='/Achievements'>Milestones</Link>
-                <a href='/'>Login</a>
-              </div>
-              <div>
-                <Route exact path='/PRIDEWall' component={PRIDEWall} />
-                <div className="div3">
-                  <Route exact path='/Achievements' component={Achievements} />
-                </div>
+                        </div>
+                      </Router>
               </div>
             </Router>
           </div>

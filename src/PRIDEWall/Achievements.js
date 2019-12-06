@@ -2,40 +2,50 @@ import React, { Component } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 
 export default class Achievements extends Component {
-  constructor() {
-    super()
-    this.state = {
-      records:[]
-    };
-  }
+    constructor() {
+        super()
+        this.state = {
+            records:[]
+        };
+    }
 
-  componentDidMount=()=> {
-      fetch('http://localhost:9001/emp_achievements/P430221/1/5/2/1/1')
-          .then(response => response.json())
-          .then(data => {
-            this.setState({
-                records:data
+    componentDidMount=()=> {
+        fetch('http://localhost:5000/cards/cardNumbers')
+        .then(response => response.json())
+        .then(data => {
+            let p=data.P;
+            let r=data.R;
+            let i=data.I;
+            let d=data.D;
+            let e=data.E;
+
+            fetch(`http://localhost:9001/emp_achievements/P430221/${p}/${r}/${i}/${d}/${e}`)
+            .then(response => response.json())
+            .then(data => {
+                this.setState({
+                    records:data
+                })
             })
-          })
-      }
+        })
+    }
 
-      calculateExperience=()=> {
-          var total = 0
-          {this.state.records.map(each => {
-              total += each.pointsachieved
-          })}
-          var level
-          if(total<20){
-              level = "Starter"
-          }
-          else if(total>=20 && total<100){
-              level = "Intermediate"
-          }
-          else if(total>=100){
-              level = "Expert"
-          }
-          return level
-      }
+    calculateExperience=()=> {
+        var total = 0
+        {this.state.records.map(each => {
+            total += each.pointsachieved
+        })}
+        var level
+        if(total<20){
+            level = "Starter"
+        }
+        else if(total>=20 && total<100){
+            level = "Intermediate"
+        }
+        else if(total>=100){
+            level = "Expert"
+        }
+        return level
+    }
 
       render(){
           var total = 0
