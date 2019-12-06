@@ -1,64 +1,66 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class ShowAllThisMonth extends Component {
-    constructor() {
-        super()
-        this.state = {
-            records: []
-        };
-    }
+  constructor() {
+    super();
+    this.state = {
+      records: []
+    };
+  }
 
-    componentDidMount = () => {
-        fetch('http://localhost:5000/cards/home')
-            .then(response => response.json())
-            .then(data => {
-                this.setState({
-                    records: data
-                })
-            })
-    }
+  componentDidMount = () => {
+    fetch("http://localhost:5000/cards/home")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          records: data
+        });
+      });
+  };
 
-    render() {
-        return (
-            <div>
-                <div className="row">
-                    <div className="col">
-                        {this.state.records.map(each => {
-                            return (
-                                <div className="container">
-                                    <div key={each.rempno + each.sempno + each.senddate + each.category} className="card mb-3 new-card">
-                                        <div className="row no-gutters">
-                                            <div className="col-md-4">
-                                                <img
-                                                    src={each.picurl}
-                                                    className="card-img employee-image"
-                                                    alt="Image of Manager"
-                                                />
-                                                <div className="button1">
-                                                    <h1>
-                                                        <b>{each.category}</b>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-8">
-                                                <div className="card-body">
-                                                    <h5 className="card-title">
-                                                        <b>{each.rempno}</b>
-                                                    </h5>
-                                                    <p className="card-text">
-                                                        {each.message}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            )
-                        })}
+  render() {
+    return (
+      <div>
+        <div className="container">
+          <div className="row">
+            {this.state.records.map(each => {
+              return (
+                <div className="col-4">
+                  <div
+                    key={
+                      each.rempno + each.sempno + each.senddate + each.category
+                    }
+                    className="card mb-3 new-card"
+                  >
+                    <div className="row no-gutters">
+                      <div className="col-md-4">
+                        <img
+                          src={each.picurl}
+                          className="card-img employee-image"
+                          alt="Image of Manager"
+                        />
+                        <div className="button1">
+                          <h1>
+                            <b>{each.category}</b>
+                          </h1>
+                        </div>
+                      </div>
+                      <div className="col-md-8">
+                        <div className="card-body">
+                          <h5 className="card-title">
+                            <b>{each.rempno}</b>
+                          </h5>
+                          <p className="card-text">{each.message}</p>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
-        )
-    }
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
-                    
