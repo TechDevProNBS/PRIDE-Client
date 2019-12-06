@@ -66,15 +66,16 @@ export default class Achievements extends Component {
                                   <tr key={each.achievementdesc}>
                                       <td style={{margin:'5px'}}>{each.achievementdesc}
                                       <div className="div4">
-                                       <ProgressBar>
-                                         <ProgressBar striped variant="danger" label={35} animated now={35} key={1} />
-                                         <ProgressBar  variant="secondary"  label={65} animated now={65} key={2} />
+                                       <ProgressBar >
+                                         <ProgressBar striped variant="danger" label={each.progressachieved} animated now={each.progressachieved} key={1} max={each.progressbar} />
+                                         <ProgressBar  variant="secondary"  label={each.progressbar} animated now={each.progressbar} key={2} />
                                        </ProgressBar>
                                       </div>
                                       </td>
-                                      <td style={{margin:'5px'}}>{each.points}</td>
                                       <td style={{margin:'5px'}}>{each.progressbar}</td>
                                       <td style={{margin:'5px'}}>{each.progressachieved}</td>
+                                      <td style={{margin:'5px'}}>{each.points} pp</td>
+
                                   </tr>
                               )
                           })}

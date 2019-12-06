@@ -32,6 +32,7 @@ export default class CreateCard extends Component {
         })
         window.location.reload();
     }
+
     /*PRIDE buttons remain blue once clicked */
     P() {
         document.getElementById("P").style.backgroundColor = "blue";
@@ -53,9 +54,10 @@ export default class CreateCard extends Component {
         document.getElementById("E").style.backgroundColor = "blue";
         document.getElementById("category").value = "E";
     }
-    /*PRIDE buttons remain blue once clicked */
+
     render() {
         return (
+
             <div>
                 <input type="text" id="category" readOnly style={{ visibility: "collapse" }}/>
                 <table id="table" className="table" >
