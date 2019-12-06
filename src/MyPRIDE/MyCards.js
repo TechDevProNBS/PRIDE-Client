@@ -55,9 +55,8 @@ export default class ShowAllThisEmployee extends Component {
 </div>
                         <div>
                           <Route exact path='/PRIDEWall' component={PRIDEWall}/>
-                          <div className="div3">
                           <Route exact path='/Achievements' component={Achievements}/>
-                          </div>
+
                         </div>
                       </Router>
                 </div>
