@@ -46,7 +46,7 @@ export default class Achievements extends Component {
                   </div>
                   <table style={{textAlign:'center'}}>
                       <tbody>
-                  
+
                           <tr>
                               <td>Experience Level: {this.calculateExperience()}</td>
                           </tr>
