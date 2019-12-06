@@ -27,42 +27,44 @@ export default class ShowAllThisEmployee extends Component {
     render(){
         return(
             <div>
+              <span>Welcome Isaac Douglas!</span>
                 <div>
-                     <span>Welcome Isaac Douglas!</span>
-                    <div className="div1"><img src="favicon.ico" alt="favicon"></img>
-
-{ /* First card */}
-                    
-                    </div>
-{ /* Progress Card */}
-
-                      {/* <div className="div2">
-                        <ProgressBar>
-                          <ProgressBar striped variant="danger" label={35} animated now={35} key={1} />
-                          <ProgressBar  variant="secondary"  label={65} animated now={65} key={2} />
-                        </ProgressBar>
-                    </div> */}
-
 
                 <div>
                     <Router>
-                    <div class="sidenav">
-                        <Link to='/'>Login</Link>
-                        <Link to='/PRIDEWall'>PRIDE Wall</Link>
-                        <a href='/'>My Sent Cards</a>
-                        <Link to='/Achievements'>Milestones</Link>
-                        <a href='/'>Login</a>
-</div>
+                    <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+
+     <div>
+     </div>
+{ /* Progress Card */}
+ <div>
+ <img  src="Capture.PNG" alt="Capture"></img>
+ 
+         <ProgressBar>
+           <ProgressBar striped variant="danger" label={35} animated now={35} key={1} />
+           <ProgressBar  variant="secondary"  label={65} animated now={65} key={2} />
+         </ProgressBar>
+     </div>
+          <Link to='/'>My PRIDE Cards</Link>
+          <Link to='/'>My Sent Cards</Link>
+          <Link to='/Achievements'>Milestones</Link>
+      </div>
+
                         <div>
                           <Route exact path='/PRIDEWall' component={PRIDEWall}/>
-                          <div className="div3">
+                          <div class="col-8 text-left">
                           <Route exact path='/Achievements' component={Achievements}/>
+                          </div>
+                          </div>
                           </div>
                         </div>
                       </Router>
                 </div>
 
             </div>
+
         </div>
         )
     }
