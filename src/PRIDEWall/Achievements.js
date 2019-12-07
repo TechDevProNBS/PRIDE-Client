@@ -33,9 +33,9 @@ export default class Achievements extends Component {
         var total = 0
         var level
         var outof = 0
-        {this.state.records.map(each => {
+        this.state.records.forEach(each => {
             total += each.pointsachieved
-        })}
+        })
         if(total<20){
             level = "Starter"
             outof = 20
@@ -53,7 +53,6 @@ export default class Achievements extends Component {
     }
 
       render(){
-          var total = 0
           return(
               <div>
                   <div>
@@ -67,7 +66,6 @@ export default class Achievements extends Component {
                               <td>Experience Level: {this.calculateExperience().pointsoutof}</td>
                           </tr>
                           {this.state.records.map(each => {
-                              total = (total + each.pointsachieved)
                               return (
                                   <tr key={each.achievementdesc}>
                                       <td style={{margin:'5px'}}>{each.achievementdesc}

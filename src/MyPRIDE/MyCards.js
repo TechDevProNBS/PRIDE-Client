@@ -56,7 +56,7 @@ export default class ShowAllThisEmployee extends Component {
                             <img
                               src={each.picurl}
                               className="card-img employee-image"
-                              alt="Image of Manager"
+                              alt="Manager"
                             />
                             <div className="button1">
                               <h1>
@@ -86,9 +86,9 @@ export default class ShowAllThisEmployee extends Component {
 
           <div>
             <Router>
-              <div class="container-fluid text-center">
-                <div class="row content">
-                  <div class="col-sm-2 sidenav">
+              <div className="container-fluid text-center">
+                <div className="row content">
+                  <div className="col-sm-2 sidenav">
 
                     <div>
                     </div>
@@ -108,7 +108,7 @@ export default class ShowAllThisEmployee extends Component {
 
                   <div>
                     <Route exact path='/PRIDEWall' component={PRIDEWall} />
-                    <div class="col-8 text-left">
+                    <div className="col-8 text-left">
                       <Route exact path='/Achievements' component={Achievements} />
                     </div>
                   </div>

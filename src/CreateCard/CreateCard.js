@@ -62,16 +62,15 @@ export default class CreateCard extends Component {
                 <input type="text" id="category" readOnly style={{ visibility: "collapse" }}/>
                 <table id="table" className="table" >
                     <tbody>
-                    <tr> <td>To: <input id="rempno" placeholder="Their Employee Number"></input></td>    </tr>
-
+                    <tr><td>To: <input id="rempno" placeholder="Their Employee Number"></input></td></tr>
                     <tr><td>Recognising:
-                        <span class="dropdown"> <button id="P" onClick={() => this.P()} className="button1">P</button> <span class="dropdown-content"> <p>Putting members first.</p></span> </span>
-                        <span class="dropdown"> <button id="R" onClick={() => this.R()} className="button1">R</button> <span class="dropdown-content"> <p>Rising to the challenge.</p></span> </span>
-                        <span class="dropdown"> <button id="I" onClick={() => this.I()} className="button1">I</button> <span class="dropdown-content"> <p>Inspiring trust.</p></span>  </span>
-                        <span class="dropdown"> <button id="D" onClick={() => this.D()} className="button1">D</button> <span class="dropdown-content"> <p>Doing the right thing.</p></span> </span>
-                        <span class="dropdown"> <button id="E" onClick={() => this.E()} className="button1">E</button> <span class="dropdown-content"> <p>Excelling at relationships.</p></span> </span>
+                        <span className="dropdown"> <button id="P" onClick={() => this.P()} className="button1">P</button> <span className="dropdown-content"> <p>Putting members first.</p></span> </span>
+                        <span className="dropdown"> <button id="R" onClick={() => this.R()} className="button1">R</button> <span className="dropdown-content"> <p>Rising to the challenge.</p></span> </span>
+                        <span className="dropdown"> <button id="I" onClick={() => this.I()} className="button1">I</button> <span className="dropdown-content"> <p>Inspiring trust.</p></span>  </span>
+                        <span className="dropdown"> <button id="D" onClick={() => this.D()} className="button1">D</button> <span className="dropdown-content"> <p>Doing the right thing.</p></span> </span>
+                        <span className="dropdown"> <button id="E" onClick={() => this.E()} className="button1">E</button> <span className="dropdown-content"> <p>Excelling at relationships.</p></span> </span>
                     </td></tr>
-                    <tr>  <td>
+                    <tr><td>
                         Comment: <textarea className="textbox" id="message" placeholder="Your Message"></textarea></td></tr>
                     <tr>
                         <td><button id="newbutton" onClick={() => this.addCard()}>Create New Card</button></td>

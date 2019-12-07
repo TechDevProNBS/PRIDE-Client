@@ -25,7 +25,7 @@ export default class Carousel extends Component {
           <div className="row">
             {this.state.records.map(each => {
               return (
-                <div>
+                <div key={`${each.rempno},${each.achievement_id}`}>
                   <span>{each.rempno} has achieved {each.achievement_id}</span>
                 </div>
               )
