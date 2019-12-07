@@ -25,19 +25,14 @@ export default class ShowAllThisMonth extends Component {
           <div className="row">
             {this.state.records.map(each => {
               return (
-                <div className="col-4">
-                  <div
-                    key={
-                      each.rempno + each.sempno + each.senddate + each.category
-                    }
-                    className="card mb-3 new-card"
-                  >
+                <div className="col-4" key={each.rempno + each.sempno + each.senddate + each.category}>
+                  <div className="card mb-3 new-card">
                     <div className="row no-gutters">
                       <div className="col-md-4">
                         <img
                           src={each.picurl}
                           className="card-img employee-image"
-                          alt="Image of Manager"
+                          alt="Manager"
                         />
                         <div className="button1">
                           <h1>
