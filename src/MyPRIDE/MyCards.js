@@ -4,6 +4,8 @@ import ProgressBar from 'react-bootstrap/ProgressBar'
 
 import PRIDEWall from '../PRIDEWall/PRIDEWall';
 import Achievements from '../PRIDEWall/Achievements';
+import MyCards from './MyCards';
+import MySentCards from './MySentCards';
 
 
 export default class ShowAllThisEmployee extends Component {
@@ -101,8 +103,8 @@ export default class ShowAllThisEmployee extends Component {
                         <ProgressBar variant="secondary" label={65} animated now={65} key={2} />
                       </ProgressBar>
                     </div>
-                    <Link to='/'>My PRIDE Cards</Link>
-                    <Link to='/'>My Sent Cards</Link>
+                    <Link to='/cards/MyCards'>My PRIDE Cards</Link>
+                    <Link to='/cards/MySentCards'>My Sent Cards</Link>
                     <Link to='/Achievements'>Milestones</Link>
                   </div>
 

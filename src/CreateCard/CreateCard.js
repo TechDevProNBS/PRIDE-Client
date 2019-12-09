@@ -30,6 +30,9 @@ export default class CreateCard extends Component {
             },
             body: JSON.stringify(data)
         })
+        .then(response => response.json())
+        .then(data=>alert(JSON.stringify(data.response)))
+        .catch(error=>alert(error))
         window.location.reload();
     }
 
