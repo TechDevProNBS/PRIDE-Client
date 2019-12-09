@@ -170,7 +170,7 @@ body {
 .div4 {
   width: 350px;
   height: 20px;
-  border: 1px solid #303030;
+
   border-radius: 16px;
   /* background-color: red; */
 }
@@ -218,3 +218,8 @@ body {
   }
   /* example textbox*/
   /* New GridLayout */
+.table1{
+  overflow-y: scroll;
+  width: 450px;
+  height: 600px;
+}
