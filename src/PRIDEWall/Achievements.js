@@ -9,6 +9,16 @@ export default class Achievements extends Component {
         };
     }
 
+/**
+ * componentDidMount code is exectued when the page first loads.
+ * The method contains two fetch requests to obtain data from the back end servers.
+ * The first receives data from the Express back end and defines 5 variables (p,r,i,d,e) to store data from the received
+ * JSON object. These variables represent the number of each category of PRIDE card that the user has received.
+ * 
+ * The second fetch request receives data from the SpringBoot server via an end point containing the logged in employee number
+ * and their number of each category of PRIDE card. Data from the response is assigned to the value of the records key within the this.state object.
+ */
+
     componentDidMount = () => {
         fetch('http://localhost:5000/cards/cardNumbers')
             .then(response => response.json())
