@@ -16,7 +16,7 @@ export default class HomePage extends React.Component{
                     <Link to='/CreateCard'>Send a PRIDE card</Link>
                     <Link to='/MyPRIDEWall'>MyPRIDE</Link>
 
-  </div>
+                </div>
 
                     <div>
                         <Route exact path='/PRIDEWall' component={PRIDEWall}/>

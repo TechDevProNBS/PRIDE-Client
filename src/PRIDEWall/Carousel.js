@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import Carousel from 'react-bootstrap/Carousel'
 
-export default class Carousel extends Component {
+
+export default class AchievementCarousel extends Component {
   constructor() {
     super();
     this.state = {
@@ -20,19 +22,22 @@ export default class Carousel extends Component {
 
   render() {
     return (
-      <div>
-        <div className="container">
-          <div className="row">
-            {this.state.records.map(each => {
-              return (
-                <div key={`${each.rempno},${each.achievement_id}`}>
-                  <span>{each.rempno} has achieved {each.achievement_id}</span>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </div>
+      <Carousel>
+        {this.state.records.map(each => {
+          return (
+            <Carousel.Item key={`${each.rempno},${each.achievement_id}`}>
+              <img
+                  className="d-block w-100"
+                  src="holder.js/800x400?text=First slide&bg=373940"
+                  alt={each.rempno}
+              />
+              <Carousel.Caption>
+                <p>{each.rempo} has completed the achievement {each.achievement_id}</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          )
+        })}
+      </Carousel>
     )
   }
 }
