@@ -25,14 +25,14 @@ export default class AchievementCarousel extends Component {
       <Carousel>
         {this.state.records.map(each => {
           return (
-            <Carousel.Item key={`${each.rempno},${each.achievement_id}`}>
+            <Carousel.Item key={`${each.name},${each.achievement}`}>
               <img
                   className="d-block w-100"
                   src="holder.js/800x400?text=First slide&bg=373940"
-                  alt={each.rempno}
+                  alt="jhgjhg"  
               />
               <Carousel.Caption>
-                <p>{each.rempo} has completed the achievement {each.achievement_id}</p>
+                <p>Congratulations to {each.name} for achieving the milestone '{each.achievement}'</p>
               </Carousel.Caption>
             </Carousel.Item>
           )
