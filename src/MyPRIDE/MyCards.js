@@ -42,7 +42,7 @@ export default class ShowAllThisEmployee extends Component {
     return (
       <div>
         <div>
-          <span>Welcome Isaac Douglas!</span>
+          <h1>My PRIDE Cards</h1>
 
             { /* First card */}
             <div className="row">

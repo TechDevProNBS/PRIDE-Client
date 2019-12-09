@@ -10,6 +10,7 @@ export default class MyPRIDE extends React.Component{
     render(){
         return(
           <div>
+            <span>Welcome Isaac Douglas!</span>
             <Router>
               <div className="container-fluid text-center">
                 <div className="row content">
