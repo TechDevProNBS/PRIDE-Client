@@ -66,19 +66,20 @@ export default class Achievements extends Component {
     render() {
         return (
             <div className="table1">
-                <div>
-                    <h1>Milestones</h1>
+                <div style={{ textalign: 'center' }}>
+
                 </div>
                 <table >
                     <tbody>
-                        <tr>
-                            <td>Experience Level: {this.calculateExperience().level}</td>
+                        
+                          <tr>  <td><h1>Milestones</h1></td></tr>
+                          <tr>  <td>Experience Level: {this.calculateExperience().level}</td></tr>
 
                             {/*  <td>Experience Level: {this.calculateExperience().pointsachieved}</td>
                             <td>Experience Level: {this.calculateExperience().pointstoachieve}</td>
                             <td>Experience Level: {this.calculateExperience().pointsoutof}</td> */}
 
-                        </tr>
+
                         {this.state.records.map(each => {
                             return (
                                 <tr key={each.achievementdesc}>

@@ -220,6 +220,8 @@ body {
   /* New GridLayout */
 .table1{
   overflow-y: scroll;
-  width: 450px;
-  height: 600px;
+  width: 800px;
+  height: 400px;
+  text-align: center;
+  padding-left: 50%;
 }
