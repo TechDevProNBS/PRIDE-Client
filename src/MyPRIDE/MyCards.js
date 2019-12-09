@@ -18,7 +18,7 @@ export default class ShowAllThisEmployee extends Component {
 
   componentDidMount = () => {
     let data = {
-      "rempno": "P111211"
+      "rempno": "P430221"
     }
     fetch('http://localhost:5000/cards/user'
       , {
@@ -44,7 +44,7 @@ export default class ShowAllThisEmployee extends Component {
     return (
       <div>
         <div>
-          <span>Welcome Isaac Douglas!</span>
+          <h1>My PRIDE Cards</h1>
 
             { /* First card */}
             <div className="row">
@@ -85,39 +85,6 @@ export default class ShowAllThisEmployee extends Component {
             </div>
           </div>
           { /* Progress Card */}
-
-          <div>
-            <Router>
-              <div className="container-fluid text-center">
-                <div className="row content">
-                  <div className="col-sm-2 sidenav">
-
-                    <div>
-                    </div>
-                    { /* Progress Card */}
-                    <div>
-                      <img src="Capture.PNG" alt="Capture"></img>
-
-                      <ProgressBar>
-                        <ProgressBar striped variant="danger" label={35} animated now={35} key={1} />
-                        <ProgressBar variant="secondary" label={65} animated now={65} key={2} />
-                      </ProgressBar>
-                    </div>
-                    <Link to='/cards/MyCards'>My PRIDE Cards</Link>
-                    <Link to='/cards/MySentCards'>My Sent Cards</Link>
-                    <Link to='/Achievements'>Milestones</Link>
-                  </div>
-
-                  <div>
-                    <Route exact path='/PRIDEWall' component={PRIDEWall} />
-                    <div className="col-8 text-left">
-                      <Route exact path='/Achievements' component={Achievements} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Router>
-          </div>
       </div>
     )
   }

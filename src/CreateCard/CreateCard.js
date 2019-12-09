@@ -36,26 +36,47 @@ export default class CreateCard extends Component {
         window.location.reload();
     }
 
-    /*PRIDE buttons remain blue once clicked */
+    /*PRIDE buttons remain #303030 once clicked */
     P() {
-        document.getElementById("P").style.backgroundColor = "blue";
+        document.getElementById("P").style.backgroundColor = "#303030";
         document.getElementById("category").value = "P";
+        document.getElementById("R").style.backgroundColor = "#004a8f";
+        document.getElementById("I").style.backgroundColor = "#004a8f";
+        document.getElementById("D").style.backgroundColor = "#004a8f";
+        document.getElementById("E").style.backgroundColor = "#004a8f";
     }
     R() {
-        document.getElementById("R").style.backgroundColor = "blue";
-        document.getElementById("category").value = "R";
+      document.getElementById("P").style.backgroundColor = "#004a8f";
+      document.getElementById("R").style.backgroundColor = "#303030";
+      document.getElementById("category").value = "R";
+      document.getElementById("I").style.backgroundColor = "#004a8f";
+      document.getElementById("D").style.backgroundColor = "#004a8f";
+      document.getElementById("E").style.backgroundColor = "#004a8f";
     }
     I() {
-        document.getElementById("I").style.backgroundColor = "blue";
-        document.getElementById("category").value = "I";
+      document.getElementById("P").style.backgroundColor = "#004a8f";
+      document.getElementById("R").style.backgroundColor = "#004a8f";
+      document.getElementById("I").style.backgroundColor = "#303030";
+      document.getElementById("category").value ="I";
+      document.getElementById("D").style.backgroundColor = "#004a8f";
+      document.getElementById("E").style.backgroundColor = "#004a8f";
+
     }
     D() {
-        document.getElementById("D").style.backgroundColor = "blue";
-        document.getElementById("category").value = "D";
+      document.getElementById("P").style.backgroundColor = "#004a8f";
+      document.getElementById("R").style.backgroundColor = "#004a8f";
+      document.getElementById("I").style.backgroundColor = "#004a8f";
+      document.getElementById("D").style.backgroundColor = "#303030";
+      document.getElementById("category").value = "D";
+      document.getElementById("E").style.backgroundColor = "#004a8f";
     }
     E() {
-        document.getElementById("E").style.backgroundColor = "blue";
-        document.getElementById("category").value = "E";
+      document.getElementById("P").style.backgroundColor = "#004a8f";
+      document.getElementById("R").style.backgroundColor = "#004a8f";
+      document.getElementById("I").style.backgroundColor = "#004a8f";
+      document.getElementById("D").style.backgroundColor = "#004a8f";
+      document.getElementById("E").style.backgroundColor = "#303030";
+      document.getElementById("category").value = "E";
     }
 
     render() {

@@ -2,7 +2,7 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 40%;
-    background-color: lightgrey;
+    background-color: #efedee;
 
   }
 
@@ -17,7 +17,7 @@
   .prideletter {
       font-size: large;
       text-align: center;
-      background-color: blue;
+      background-color: #004a8f;
       border-radius: 16px;
       color: white;
       width: 80px;
@@ -27,33 +27,60 @@
 
   .new-card{
     width: 342px;
-    background-color: lightgrey!important;
+    background-color: #efedee!important;
     height:160px;
   }
 
   .card-text{
      box-sizing: border-box;
-     background-color: lightgrey;
+     background-color: #efedee;
      resize: vertical;
      display: inline-block;
   }
 
   .employee-image{
     border-style: solid;
-    border-color: black;
+    border-color: #303030;
     border-width: 1px;
     border-radius: 3px;
     width: 70%!important;
     margin: 3px
   }
 
-  .Carousel{
-      height:150px;
-      background-color: lightgrey;
+  .d-block{
+      height:125px;
+      background-color: #efedee;
       margin-top: 25px;
+      text-align: center;
+  } 
+
+  .carousel-indicators li{
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    margin-left:10px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #004a8f;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 100%;
   }
 
-  /*Isaac code */
+  .carousel-indicators .active{
+    background-color: red;
+  }
+
+  .carousel-caption{
+    color:#303030;
+    font-size: large;
+  }
+
   .button1 {
     display: inline-block;
     padding: 5px 15px;
@@ -66,15 +93,15 @@
     background-color: darkblue;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px blue;
+    box-shadow: 0 9px #004a8f;
     margin-left: 37px;
   }
 
   .button1:hover{
-    background-color: blue;
+    background-color: #004a8f;
   }
   .button1:active {
-    background-color: blue;
+    background-color: #004a8f;
     box-shadow: 0 5px darkblue;
     transform: translateY(4px);
   }
