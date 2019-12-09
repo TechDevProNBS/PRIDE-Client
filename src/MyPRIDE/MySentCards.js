@@ -16,7 +16,7 @@ export default class ShowAllThisEmployee extends Component {
 
   componentDidMount = () => {
     let data = {
-      "rempno": "P111211"
+      "sempno": "P430221"
     }
     fetch('http://localhost:5000/cards/mySentCards'
       , {

@@ -22,8 +22,8 @@ export default class MyPRIDE extends React.Component{
                       <img src="Capture.PNG" alt="Capture"></img>
 
                       <ProgressBar>
-                        <ProgressBar striped variant="danger" label={35} animated now={35} key={1} />
-                        <ProgressBar variant="secondary" label={65} animated now={65} key={2} />
+                        <ProgressBar striped variant="danger" label={Achievements.progressachieved} animated now={Achievements.progressachieved} key={1} />
+                        {/*<ProgressBar variant="secondary" label={Achievements.pointstoachieve} animated now={Achievements.pointstoachieve} key={2} /> */}
                       </ProgressBar>
                     </div>
                     <Link to='/MyCards'>My PRIDE Cards</Link>

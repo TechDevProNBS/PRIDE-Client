@@ -30,6 +30,8 @@ export default class CreateCard extends Component {
             },
             body: JSON.stringify(data)
         })
+   
+        .then(alert(response))
         window.location.reload();
     }
 
@@ -37,22 +39,43 @@ export default class CreateCard extends Component {
     P() {
         document.getElementById("P").style.backgroundColor = "blue";
         document.getElementById("category").value = "P";
+        document.getElementById("R").style.backgroundColor = "darkblue";
+        document.getElementById("I").style.backgroundColor = "darkblue";
+        document.getElementById("D").style.backgroundColor = "darkblue";
+        document.getElementById("E").style.backgroundColor = "darkblue";
     }
     R() {
-        document.getElementById("R").style.backgroundColor = "blue";
-        document.getElementById("category").value = "R";
+      document.getElementById("P").style.backgroundColor = "darkblue";
+      document.getElementById("R").style.backgroundColor = "blue";
+      document.getElementById("category").value = "R";
+      document.getElementById("I").style.backgroundColor = "darkblue";
+      document.getElementById("D").style.backgroundColor = "darkblue";
+      document.getElementById("E").style.backgroundColor = "darkblue";
     }
     I() {
-        document.getElementById("I").style.backgroundColor = "blue";
-        document.getElementById("category").value = "I";
+      document.getElementById("P").style.backgroundColor = "darkblue";
+      document.getElementById("R").style.backgroundColor = "darkblue";
+      document.getElementById("I").style.backgroundColor = "blue";
+      document.getElementById("category").value ="I";
+      document.getElementById("D").style.backgroundColor = "darkblue";
+      document.getElementById("E").style.backgroundColor = "darkblue";
+
     }
     D() {
-        document.getElementById("D").style.backgroundColor = "blue";
-        document.getElementById("category").value = "D";
+      document.getElementById("P").style.backgroundColor = "darkblue";
+      document.getElementById("R").style.backgroundColor = "darkblue";
+      document.getElementById("I").style.backgroundColor = "darkblue";
+      document.getElementById("D").style.backgroundColor = "blue";
+      document.getElementById("category").value = "D";
+      document.getElementById("E").style.backgroundColor = "darkblue";
     }
     E() {
-        document.getElementById("E").style.backgroundColor = "blue";
-        document.getElementById("category").value = "E";
+      document.getElementById("P").style.backgroundColor = "darkblue";
+      document.getElementById("R").style.backgroundColor = "darkblue";
+      document.getElementById("I").style.backgroundColor = "darkblue";
+      document.getElementById("D").style.backgroundColor = "darkblue";
+      document.getElementById("E").style.backgroundColor = "blue";
+      document.getElementById("category").value = "E";
     }
 
     render() {
