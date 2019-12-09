@@ -73,9 +73,11 @@ export default class Achievements extends Component {
                     <tbody>
                         <tr>
                             <td>Experience Level: {this.calculateExperience().level}</td>
-                            <td>Experience Level: {this.calculateExperience().pointsachieved}</td>
+
+                            {/*  <td>Experience Level: {this.calculateExperience().pointsachieved}</td>
                             <td>Experience Level: {this.calculateExperience().pointstoachieve}</td>
-                            <td>Experience Level: {this.calculateExperience().pointsoutof}</td>
+                            <td>Experience Level: {this.calculateExperience().pointsoutof}</td> */}
+
                         </tr>
                         {this.state.records.map(each => {
                             return (
@@ -84,7 +86,9 @@ export default class Achievements extends Component {
                                         <div className="div4">
                                             <ProgressBar >
                                                 <ProgressBar striped variant="danger" label={each.progressachieved} animated now={each.progressachieved} key={1} max={each.progressbar} />
-                                                <ProgressBar variant="secondary" label={each.progressbar} animated now={each.progressbar} key={2} />
+
+                                            {/*    <ProgressBar variant="secondary" label={each.progressbar} animated now={each.progressbar} key={2} /> */}
+
                                             </ProgressBar>
                                         </div>
                                     </td>
