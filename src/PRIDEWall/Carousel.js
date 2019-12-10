@@ -29,7 +29,7 @@ export default class AchievementCarousel extends Component {
               <img
                   className="d-block w-100"
                   src="holder.js/800x400?text=First slide&bg=373940"
-                  alt="jhgjhg"  
+                  alt=""  
               />
               <Carousel.Caption>
                 <p>Congratulations to {each.name} for achieving the milestone '{each.achievement}'</p>
