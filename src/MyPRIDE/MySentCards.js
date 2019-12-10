@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../PRIDEWall/PRIDEWall.css'
 
 
 export default class ShowAllThisEmployee extends Component {
@@ -51,7 +52,7 @@ export default class ShowAllThisEmployee extends Component {
                             className="card-img employee-image"
                             alt="Manager"
                           />
-                          <div className="button1">
+                          <div className="prideletter">
                             <h1>
                               <b>{each.category}</b>
                             </h1>
