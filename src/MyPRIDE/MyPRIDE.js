@@ -72,7 +72,7 @@ export default class MyPRIDE extends React.Component {
                 <div>
                   <div className="image-wrapper">
                     <img className="scale-image" src="Capture.PNG" alt="Capture"></img>
-                    <ProgressBar  style={{ maxHeight:'auto',maxWidth: '170px',marginLeft:'auto',marginRight:'auto'}}>
+                    <ProgressBar  className="div5">
                       <ProgressBar  striped variant="danger" label={this.calculateExperience().pointsachieved} animated now={this.calculateExperience().pointsachieved} key={1} max={this.calculateExperience().pointsoutof} />
                       <ProgressBar variant="secondary" label={this.calculateExperience().pointstoachieve} animated now={this.calculateExperience().pointstoachieve} key={2} />
                     </ProgressBar>

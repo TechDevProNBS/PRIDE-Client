@@ -1,6 +1,6 @@
 body {
   scroll-behavior: smooth;
-  background-color: #ffffff;
+  background-color: white;
   align-items: left;
   justify-content: left;
   text-align: left;
@@ -10,7 +10,7 @@ body {
 /*next code*/
 .table{
   scroll-behavior: smooth;
-  background-color: #ffffff;
+  background-color: white;
   align-items: left;
   justify-content: left;
   text-align: left;
@@ -39,13 +39,13 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #ffffff;
+  background-color: white;
   color: red;
 }
 
 .navbar a.active {
   background-color: #4CAF50;
-  color: #ffffff;
+  color: white;
 }
 
 .content {
@@ -70,7 +70,7 @@ body {
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #ffffff;
+  color: white;
   background-color: #004a8f;
   border: none;
   border-radius: 15px;
@@ -108,7 +108,7 @@ body {
   display: block;
 }
 .spacer{
-  color:#ffffff;
+  color:white
 }
 /*textbox*/
 .textbox {
@@ -145,7 +145,7 @@ body {
 
 .sidenav a:hover {
   color: red;
-  background:#ffffff;
+  background:white;
 }
 /*next code*/
 .div1 {
@@ -170,8 +170,9 @@ body {
 .div4 {
   width: 350px;
   height: 20px;
-  border-radius: 16px;
 
+  border-radius: 16px;
+  /* background-color: red; */
 }
 /*K.dot code */
 .card {
@@ -198,15 +199,14 @@ body {
       text-align: center;
       background-color: #004a8f;
       border-radius: 16px;
-      color: #ffffff;
+      color: white;
       width: 80px;
       height: 60px;
       margin: 3px;
   }
 
   .new-card{
-    width: auto;
-    height:auto;
+    width: 342px;
   }
 
   .employee-image{
@@ -219,15 +219,11 @@ body {
   /* example textbox*/
   /* New GridLayout */
 .table1{
-  display: block;
   overflow-y: scroll;
-  width:800px;
-  min-width: 300%;
-  width:auto;
+  width: 800px;
   height: 400px;
   text-align: center;
-  padding-left: 80%;
-
+  padding-left: 50%;
 }
 .scale-image
 {
@@ -238,5 +234,25 @@ padding-left: 15%;
 }
 .image-wrapper
 {
+position: relative;
+}
+.table2{
+  display: block;
+  overflow-y: scroll;
+  width:800px;
+  min-width: 300%;
+  width:auto;
+  height: 400px;
+  text-align: center;
+  padding-left: 80%;
 
+}
+.div5 {
+  width: 50px;
+  height: 15px;
+  display: block;
+  min-width: 100%;
+  width:auto;
+  border-radius: 16px;
+  /* background-color: red; */
 }
