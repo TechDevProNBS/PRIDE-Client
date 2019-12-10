@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 
+// import imageName from '../../src/images/wdkjed.png'
+
 
 export default class CreateCard extends Component {
     constructor() {
@@ -85,7 +87,7 @@ export default class CreateCard extends Component {
     render() {
         return (
 
-            <div>
+            <div style={{position: "relative", top: "70px"}}>
                 <input type="text" id="category" readOnly style={{ visibility: "collapse" }}/>
                 <table id="table" className="table" >
                     <tbody>
