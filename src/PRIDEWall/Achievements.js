@@ -65,7 +65,7 @@ export default class Achievements extends Component {
 
     render() {
         return (
-            <div className="table1">
+            <div className="table2">
                 <div style={{ textalign: 'center' }}>
 
                 </div>
@@ -80,9 +80,6 @@ export default class Achievements extends Component {
                                         <div className="div4">
                                             <ProgressBar >
                                                 <ProgressBar striped variant="danger" label={each.progressachieved} animated now={each.progressachieved} key={1} max={each.progressbar} />
-
-                                                {/*    <ProgressBar variant="secondary" label={each.progressbar} animated now={each.progressbar} key={2} /> */}
-
                                             </ProgressBar>
                                         </div>
                                     </td>

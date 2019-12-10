@@ -8,16 +8,13 @@ export default class PRIDEWall extends React.Component {
   render() {
     return (
       <div>
-        <div>
+        <div style={{ position: "relative", height: "432px",  overflow: "scroll", }}>
           <ShowAllThisMonth/>
         </div>
-        <div>
+        <div style={{ position: "fixed", bottom: "0", width: "100%"}}>
           <AchievementCarousel/>
         </div>
       </div>
     )
   }
 }
-
-        
-        

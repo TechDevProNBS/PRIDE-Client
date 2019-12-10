@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 
-
 export default class CreateCard extends Component {
     constructor() {
         super()
@@ -111,8 +110,7 @@ export default class CreateCard extends Component {
 
     render() {
         return (
-
-            <div>
+            <div style={{position: "relative", top: "70px"}}>
                 <input type="text" id="category" readOnly style={{ visibility: "collapse" }} />
                 <input type="text" id="sempno" readOnly style={{ visibility: "collapse" }} value="P654321" />
                 <table id="table" className="table" >
