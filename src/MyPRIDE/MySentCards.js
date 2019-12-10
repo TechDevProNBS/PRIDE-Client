@@ -1,9 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import ProgressBar from 'react-bootstrap/ProgressBar'
-
-import PRIDEWall from '../PRIDEWall/PRIDEWall';
-import Achievements from '../PRIDEWall/Achievements';
 
 
 export default class ShowAllThisEmployee extends Component {
@@ -16,7 +11,7 @@ export default class ShowAllThisEmployee extends Component {
 
   componentDidMount = () => {
     let data = {
-      "sempno": "P430221"
+      "sempno": "P654321"
     }
     fetch('http://localhost:5000/cards/mySentCards'
       , {
@@ -36,6 +31,7 @@ export default class ShowAllThisEmployee extends Component {
           })
         }
       })
+      console.log(this.state.records)
   }
 
   render() {
@@ -47,6 +43,7 @@ export default class ShowAllThisEmployee extends Component {
             { /* First card */}
             <div className="row">
               <div className="col">
+                {console.log(this.state.records)}
                 {this.state.records.map(each => {
                   return (
                     <div className="container">
@@ -56,7 +53,7 @@ export default class ShowAllThisEmployee extends Component {
                             <img
                               src={each.picurl}
                               className="card-img employee-image"
-                              alt="Image of Manager"
+                              alt="Manager"
                             />
                             <div className="button1">
                               <h1>
@@ -80,7 +77,7 @@ export default class ShowAllThisEmployee extends Component {
                   )
                 })}
               </div>
-            </div>
+              </div>
           { /* Progress Card */}
         </div>
       </div>

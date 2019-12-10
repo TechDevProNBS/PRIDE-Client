@@ -9,15 +9,15 @@ export default class Achievements extends Component {
         };
     }
 
-/**
- * componentDidMount code is exectued when the page first loads.
- * The method contains two fetch requests to obtain data from the back end servers.
- * The first receives data from the Express back end and defines 5 variables (p,r,i,d,e) to store data from the received
- * JSON object. These variables represent the number of each category of PRIDE card that the user has received.
- *
- * The second fetch request receives data from the SpringBoot server via an end point containing the logged in employee number
- * and their number of each category of PRIDE card. Data from the response is assigned to the value of the records key within the this.state object.
- */
+    /**
+     * componentDidMount code is exectued when the page first loads.
+     * The method contains two fetch requests to obtain data from the back end servers.
+     * The first receives data from the Express back end and defines 5 variables (p,r,i,d,e) to store data from the received
+     * JSON object. These variables represent the number of each category of PRIDE card that the user has received.
+     *
+     * The second fetch request receives data from the SpringBoot server via an end point containing the logged in employee number
+     * and their number of each category of PRIDE card. Data from the response is assigned to the value of the records key within the this.state object.
+     */
 
     componentDidMount = () => {
         fetch('http://localhost:5000/cards/cardNumbers')
@@ -72,19 +72,11 @@ export default class Achievements extends Component {
                 <table >
                     <tbody>
 
-                          <tr>  <td><h1>Milestones</h1></td></tr>
-                          <tr>  <td>Experience Level: {this.calculateExperience().level}</td></tr>
-                          <ProgressBar >
-                              <ProgressBar striped variant="danger" label={this.progressachieved} animated now={this.progressachieved} key={1} max={this.progressbar} />
-
-                          {/*    <ProgressBar variant="secondary" label={each.progressbar} animated now={each.progressbar} key={2} /> */}
-
-                          </ProgressBar>
-                            {/*  <td>Experience Level: {this.calculateExperience().pointsachieved}</td>
-                            <td>Experience Level: {this.calculateExperience().pointstoachieve}</td>
-                            <td>Experience Level: {this.calculateExperience().pointsoutof}</td> */}
-
-
+                        <tr><td><h1>Milestones</h1></td></tr>
+                        <tr><td>Experience Level: {this.calculateExperience().level}</td></tr>
+                        <ProgressBar >
+                            <ProgressBar striped variant="danger" label={this.progressachieved} animated now={this.progressachieved} key={1} max={this.progressbar} />
+                        </ProgressBar>
                         {this.state.records.map(each => {
                             return (
                                 <tr key={each.achievementdesc}>
@@ -93,7 +85,7 @@ export default class Achievements extends Component {
                                             <ProgressBar >
                                                 <ProgressBar striped variant="danger" label={each.progressachieved} animated now={each.progressachieved} key={1} max={each.progressbar} />
 
-                                            {/*    <ProgressBar variant="secondary" label={each.progressbar} animated now={each.progressbar} key={2} /> */}
+                                                {/*    <ProgressBar variant="secondary" label={each.progressbar} animated now={each.progressbar} key={2} /> */}
 
                                             </ProgressBar>
                                         </div>
