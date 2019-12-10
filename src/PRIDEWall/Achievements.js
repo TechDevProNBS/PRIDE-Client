@@ -65,7 +65,7 @@ export default class Achievements extends Component {
 
     render() {
         return (
-            <div class="table1">
+            <div className="table1">
                 <div style={{ textalign: 'center' }}>
 
                 </div>
@@ -73,10 +73,6 @@ export default class Achievements extends Component {
                     <tbody>
 
                         <tr><td><h1>Milestones</h1></td></tr>
-                        <tr><td>Experience Level: {this.calculateExperience().level}</td></tr>
-                        <ProgressBar >
-                            <ProgressBar striped variant="danger" label={this.progressachieved} animated now={this.progressachieved} key={1} max={this.progressbar} />
-                        </ProgressBar>
                         {this.state.records.map(each => {
                             return (
                                 <tr key={each.achievementdesc}>
