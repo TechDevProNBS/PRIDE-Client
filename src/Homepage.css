@@ -206,7 +206,8 @@ body {
   }
 
   .new-card{
-    width: 342px;
+    width: auto;
+    height:auto;
   }
 
   .employee-image{
