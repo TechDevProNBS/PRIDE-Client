@@ -23,13 +23,13 @@ export default class ShowAllThisEmployee extends Component {
       })
       .then(response => response.json())
       .then(data => {
-        // if (data.length === 0) {
-        //   alert("No data for user");
-        // } else {
+        if (data.length === 0) {
+          alert("No data for user");
+        } else {
           this.setState({
             records: data
           })
-        // }
+        }
       })
   }
 
