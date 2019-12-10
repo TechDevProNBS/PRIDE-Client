@@ -170,9 +170,8 @@ body {
 .div4 {
   width: 350px;
   height: 20px;
-
   border-radius: 16px;
-  /* background-color: red; */
+
 }
 /*K.dot code */
 .card {
@@ -220,9 +219,24 @@ body {
   /* example textbox*/
   /* New GridLayout */
 .table1{
+  display: block;
   overflow-y: scroll;
-  width: 800px;
+  width:800px;
+  min-width: 300%;
+  width:auto;
   height: 400px;
   text-align: center;
-  padding-left: 50%;
+  padding-left: 80%;
+
+}
+.scale-image
+{
+display: block;
+width: auto;
+max-width: 100%;
+padding-left: 15%;
+}
+.image-wrapper
+{
+
 }

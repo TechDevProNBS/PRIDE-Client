@@ -65,7 +65,7 @@ export default class Achievements extends Component {
 
     render() {
         return (
-            <div className="table1">
+            <div class="table1">
                 <div style={{ textalign: 'center' }}>
 
                 </div>
