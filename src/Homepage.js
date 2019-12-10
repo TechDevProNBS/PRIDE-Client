@@ -18,7 +18,7 @@ export default class HomePage extends React.Component{
 
                 </div>
 
-                    <div>
+                    <div style={{overflow: "scroll", top: "70px", position: "relative", height: "432px"}}>
                         <Route exact path='/PRIDEWall' component={PRIDEWall}/>
                         <Route exact path='/MyPRIDEWall' component={MyPRIDEWall}/>
                         <Route exact path='/CreateCard' component={CreateCard}/>

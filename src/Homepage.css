@@ -26,6 +26,11 @@ body {
   overflow: hidden;
   background-color: #efedee;
   color: #303030;
+  position: fixed;
+  z-index: 1007;
+  width: 100%;
+  top: 0;
+
 }
 
 .navbar a {
@@ -36,6 +41,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  /* position: fixed; */
 }
 
 .navbar a:hover {
@@ -235,8 +241,4 @@ display: block;
 width: auto;
 max-width: 100%;
 padding-left: 15%;
-}
-.image-wrapper
-{
-
 }

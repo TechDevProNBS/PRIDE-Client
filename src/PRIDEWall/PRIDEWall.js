@@ -8,10 +8,10 @@ export default class PRIDEWall extends React.Component {
   render() {
     return (
       <div>
-        <div>
+        <div style={{ position: "relative", top: "5px"}}>
           <ShowAllThisMonth/>
         </div>
-        <div>
+        <div style={{    position: "fixed", bottom: "0", width: "100%"}}>
           <AchievementCarousel/>
         </div>
       </div>
