@@ -38,8 +38,6 @@ export default class ShowAllThisEmployee extends Component {
       <div>
         <div>
           <h1>My Sent Cards</h1>
-
-          { /* First card */}
           <div className="row">
             <div className="col">
               {this.state.records.map(each => {
@@ -76,7 +74,6 @@ export default class ShowAllThisEmployee extends Component {
               })}
             </div>
           </div>
-          { /* Progress Card */}
         </div>
       </div>
     )

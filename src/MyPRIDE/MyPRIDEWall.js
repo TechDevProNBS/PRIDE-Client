@@ -1,6 +1,7 @@
 import React from 'react';
-// import ShowAllThisEmployee from './MyCards';
 import MyPRIDE from './MyPRIDE';
+import "../PRIDEWall/PRIDEWall.css";
+import "../Homepage.css";
 
 export default class MyPRIDEWall extends React.Component{
     render(){

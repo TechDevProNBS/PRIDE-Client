@@ -38,13 +38,11 @@ export default class ShowAllThisEmployee extends Component {
       <div>
         <div>
           <h1>My PRIDE Cards</h1>
-
-            { /* First card */}
-            <div className="row">
-              <div className="col">
+            <div className="container">
+              <div className="row">
                 {this.state.records.map(each => {
                   return (
-                    <div className="container" key={each.rempno + each.sempno + each.senddate + each.category} >
+                    <div className="col-4" key={each.rempno + each.sempno + each.senddate + each.category} >
                       <div className="card mb-3 new-card">
                         <div className="row no-gutters">
                           <div className="col-md-4">
@@ -77,7 +75,6 @@ export default class ShowAllThisEmployee extends Component {
               </div>
             </div>
           </div>
-          { /* Progress Card */}
       </div>
     )
   }
