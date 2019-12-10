@@ -47,6 +47,7 @@ export default class ShowAllThisEmployee extends Component {
             { /* First card */}
             <div className="row">
               <div className="col">
+                {console.log(this.state.records)}
                 {this.state.records.map(each => {
                   return (
                     <div className="container">
@@ -80,7 +81,7 @@ export default class ShowAllThisEmployee extends Component {
                   )
                 })}
               </div>
-            </div>
+              </div>
           { /* Progress Card */}
         </div>
       </div>
