@@ -34,7 +34,10 @@ export default class CreateCard extends Component {
         .then(data=>alert(JSON.stringify(data.response)))
         .catch(error=>alert(error))
         window.location.reload();
-    }
+      }
+
+
+    
 
     /*PRIDE buttons remain #303030 once clicked */
     P() {

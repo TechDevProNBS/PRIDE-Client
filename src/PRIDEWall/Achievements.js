@@ -71,10 +71,15 @@ export default class Achievements extends Component {
                 </div>
                 <table >
                     <tbody>
-                        
+
                           <tr>  <td><h1>Milestones</h1></td></tr>
                           <tr>  <td>Experience Level: {this.calculateExperience().level}</td></tr>
+                          <ProgressBar >
+                              <ProgressBar striped variant="danger" label={this.progressachieved} animated now={this.progressachieved} key={1} max={this.progressbar} />
 
+                          {/*    <ProgressBar variant="secondary" label={each.progressbar} animated now={each.progressbar} key={2} /> */}
+
+                          </ProgressBar>
                             {/*  <td>Experience Level: {this.calculateExperience().pointsachieved}</td>
                             <td>Experience Level: {this.calculateExperience().pointstoachieve}</td>
                             <td>Experience Level: {this.calculateExperience().pointsoutof}</td> */}
