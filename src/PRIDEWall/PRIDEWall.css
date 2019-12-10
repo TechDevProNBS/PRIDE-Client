@@ -97,7 +97,7 @@
 
 .button1 {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 10px 20px;
   font-size: 20%;
   cursor: pointer;
   text-align: center;
@@ -122,4 +122,6 @@
 
 .card-img employee-image {
   border-radius: 15px;
+  padding-left: 15px;
+  border-color: darkgray;
 }
