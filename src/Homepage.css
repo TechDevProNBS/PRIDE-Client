@@ -1,6 +1,6 @@
 body {
   scroll-behavior: smooth;
-  background-color: white;
+  background-color: #ffffff;
   align-items: left;
   justify-content: left;
   text-align: left;
@@ -10,7 +10,7 @@ body {
 /*next code*/
 .table{
   scroll-behavior: smooth;
-  background-color: white;
+  background-color: #ffffff;
   align-items: left;
   justify-content: left;
   text-align: left;
@@ -39,13 +39,13 @@ body {
 }
 
 .navbar a:hover {
-  background-color: white;
+  background-color: #ffffff;
   color: red;
 }
 
 .navbar a.active {
   background-color: #4CAF50;
-  color: white;
+  color: #ffffff;
 }
 
 .content {
@@ -70,7 +70,7 @@ body {
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: white;
+  color: #ffffff;
   background-color: #004a8f;
   border: none;
   border-radius: 15px;
@@ -108,7 +108,7 @@ body {
   display: block;
 }
 .spacer{
-  color:white
+  color:#ffffff;
 }
 /*textbox*/
 .textbox {
@@ -145,7 +145,7 @@ body {
 
 .sidenav a:hover {
   color: red;
-  background:white;
+  background:#ffffff;
 }
 /*next code*/
 .div1 {
@@ -199,14 +199,15 @@ body {
       text-align: center;
       background-color: #004a8f;
       border-radius: 16px;
-      color: white;
+      color: #ffffff;
       width: 80px;
       height: 60px;
       margin: 3px;
   }
 
   .new-card{
-    width: 342px;
+    width: auto;
+    height:auto;
   }
 
   .employee-image{
