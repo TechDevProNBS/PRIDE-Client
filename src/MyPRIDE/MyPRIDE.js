@@ -19,8 +19,8 @@ export default class MyPRIDE extends React.Component{
                     <div>
                     </div>
                     { /* Progress Card */}
-                    <div>
-                      <img src="Capture.PNG" alt="Capture"></img>
+                    <div class="image-wrapper">
+                      <img class="scale-image" src="Capture.PNG" alt="Capture"></img>
                       <ProgressBar >
                           <ProgressBar striped variant="danger" label={Achievements.progressachieved} animated now={Achievements.progressachieved} key={1} max={Achievements.progressbar} />
 
