@@ -19,7 +19,7 @@
       text-align: center;
       background-color: #004a8f;
       border-radius: 16px;
-      color: white;
+      color: #ffffff;
       width: 80px;
       height: 60px;
       margin: 3px;
@@ -89,7 +89,7 @@
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: white;
+    color: #ffffff;
     background-color: darkblue;
     border: none;
     border-radius: 15px;
