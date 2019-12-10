@@ -11,7 +11,7 @@ export default class PRIDEWall extends React.Component {
         <div style={{ position: "relative", height: "432px",  overflow: "scroll", }}>
           <ShowAllThisMonth/>
         </div>
-        <div style={{    position: "fixed", bottom: "0", width: "100%"}}>
+        <div style={{ position: "fixed", bottom: "0", width: "100%"}}>
           <AchievementCarousel/>
         </div>
       </div>

@@ -19,9 +19,9 @@
   background-color: #004a8f;
   border-radius: 16px;
   color: #ffffff;
-  width: 80px;
+  width: 70px!important;
   height: 60px;
-  margin: 3px;
+  margin: 15px;
 }
 
 .new-card {
@@ -42,8 +42,8 @@
   border-color: #303030;
   border-width: 1px;
   border-radius: 3px;
-  width: 70% !important;
-  margin: 3px;
+  width: 60% !important;
+  margin: 15px;
 }
 
 .d-block {
@@ -95,7 +95,7 @@
   width: 60px;
 }
 
-.button1 {
+/* .button1 {
   display: inline-block;
   padding: 10px 20px;
   font-size: 20%;
@@ -109,19 +109,19 @@
   border-radius: 15px;
   box-shadow: 0 9px #004a8f;
   margin-left: 37px;
-}
-
+} */
+/* 
 .button1:hover {
   background-color: #004a8f;
-}
-.button1:active {
+} */
+/* .button1:active {
   background-color: #004a8f;
   box-shadow: 0 5px darkblue;
   transform: translateY(4px);
-}
+} */
 
 .card-img employee-image {
   border-radius: 15px;
-  padding-left: 15px;
+  /* padding-left: 15px; */
   border-color: darkgray;
 }

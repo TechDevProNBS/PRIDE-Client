@@ -38,7 +38,7 @@ export default class ShowAllThisMonth extends Component {
                           className="card-img employee-image"
                           alt="Manager"
                         />
-                        <div className="button1">
+                        <div className="prideletter">
                           <h1>
                             <b>{each.category}</b>
                           </h1>
