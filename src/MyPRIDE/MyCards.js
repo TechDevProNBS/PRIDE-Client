@@ -1,11 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import ProgressBar from 'react-bootstrap/ProgressBar'
-
-import PRIDEWall from '../PRIDEWall/PRIDEWall';
-import Achievements from '../PRIDEWall/Achievements';
-import MyCards from './MyCards';
-import MySentCards from './MySentCards';
 
 
 export default class ShowAllThisEmployee extends Component {
@@ -30,13 +23,13 @@ export default class ShowAllThisEmployee extends Component {
       })
       .then(response => response.json())
       .then(data => {
-        if (data.length === 0) {
-          alert("No data for user");
-        } else {
+        // if (data.length === 0) {
+        //   alert("No data for user");
+        // } else {
           this.setState({
             records: data
           })
-        }
+        // }
       })
   }
 
@@ -51,8 +44,8 @@ export default class ShowAllThisEmployee extends Component {
               <div className="col">
                 {this.state.records.map(each => {
                   return (
-                    <div className="container">
-                      <div key={each.rempno + each.sempno + each.senddate + each.category} className="card mb-3 new-card">
+                    <div className="container" key={each.rempno + each.sempno + each.senddate + each.category} >
+                      <div className="card mb-3 new-card">
                         <div className="row no-gutters">
                           <div className="col-md-4">
                             <img
