@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 
-// import imageName from '../../src/images/wdkjed.png'
-
-
 export default class CreateCard extends Component {
     constructor() {
         super()

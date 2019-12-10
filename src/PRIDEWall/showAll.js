@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import './PRIDEWall.css'
+
 
 export default class ShowAllThisMonth extends Component {
   constructor() {
@@ -30,7 +32,9 @@ export default class ShowAllThisMonth extends Component {
                     <div className="row no-gutters">
                       <div className="col-md-4">
                         <img
-                          src={each.picurl}
+                          src="female-silhouette.png"
+                          height="60px"
+                          width="40px"
                           className="card-img employee-image"
                           alt="Manager"
                         />
