@@ -72,23 +72,15 @@ export default class MyPRIDE extends React.Component {
                 <div>
                   <div className="image-wrapper">
                     <img className="scale-image" src="Capture.PNG" alt="Capture"></img>
+                    <ProgressBar  style={{ maxHeight:'auto',maxWidth: '170px',marginLeft:'auto',marginRight:'auto'}}>
+                      <ProgressBar  striped variant="danger" label={this.calculateExperience().pointsachieved} animated now={this.calculateExperience().pointsachieved} key={1} max={this.calculateExperience().pointsoutof} />
+                      <ProgressBar variant="secondary" label={this.calculateExperience().pointstoachieve} animated now={this.calculateExperience().pointstoachieve} key={2} />
+                    </ProgressBar>
                   </div>
-                  <div>
+                  <div style={{ fontSize:'12px'}}>
                     Experience Level: {this.calculateExperience().level}
                   </div>
-                  <div>
-                    Experience Points: {this.calculateExperience().pointsachieved}
-                  </div>
-                  <div>
-                    Experience Points to Achieve: {this.calculateExperience().pointstoachieve}
-                  </div>
-                  <div>
-                    Experience Level Max Points: {this.calculateExperience().pointsoutof}
-                  </div>
-                  <ProgressBar >
-                    <ProgressBar striped variant="danger" label={Achievements.progressachieved} animated now={Achievements.progressachieved} key={1} max={Achievements.progressbar} />
-                    {/*    <ProgressBar variant="secondary" label={each.progressbar} animated now={each.progressbar} key={2} /> */}
-                  </ProgressBar>
+
                 </div>
                 <Link to='/MyCards'>My PRIDE Cards</Link>
                 <Link to='/MySentCards'>My Sent Cards</Link>
