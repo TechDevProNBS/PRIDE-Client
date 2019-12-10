@@ -70,7 +70,9 @@ export default class MyPRIDE extends React.Component {
                 </div>
                 { /* Progress Card */}
                 <div>
-                  <img src="Capture.PNG" alt="Capture"></img>
+                  <div className="image-wrapper">
+                    <img className="scale-image" src="Capture.PNG" alt="Capture"></img>
+                  </div>
                   <div>
                     Experience Level: {this.calculateExperience().level}
                   </div>
@@ -83,13 +85,10 @@ export default class MyPRIDE extends React.Component {
                   <div>
                     Experience Level Max Points: {this.calculateExperience().pointsoutof}
                   </div>
-                  <div class="image-wrapper">
-                      <img class="scale-image" src="Capture.PNG" alt="Capture"></img>
-                        <ProgressBar >
-                        <ProgressBar striped variant="danger" label={Achievements.progressachieved} animated now={Achievements.progressachieved} key={1} max={Achievements.progressbar} />
-                        {/*    <ProgressBar variant="secondary" label={each.progressbar} animated now={each.progressbar} key={2} /> */}
-                        </ProgressBar>
-                  </div>
+                  <ProgressBar >
+                    <ProgressBar striped variant="danger" label={Achievements.progressachieved} animated now={Achievements.progressachieved} key={1} max={Achievements.progressbar} />
+                    {/*    <ProgressBar variant="secondary" label={each.progressbar} animated now={each.progressbar} key={2} /> */}
+                  </ProgressBar>
                 </div>
                 <Link to='/MyCards'>My PRIDE Cards</Link>
                 <Link to='/MySentCards'>My Sent Cards</Link>
