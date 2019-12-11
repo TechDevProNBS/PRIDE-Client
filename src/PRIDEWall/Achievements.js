@@ -46,16 +46,16 @@ export default class Achievements extends Component {
         this.state.records.forEach(each => {
             total += each.pointsachieved
         })
-        if (total < 20) {
-            level = "Starter"
-            outof = 20
+        if (total < 30) {
+            level = "PRIDE Recruit"
+            outof = 30
         }
-        else if (total >= 20 && total < 100) {
-            level = "Intermediate"
+        else if (total >= 30 && total < 100) {
+            level = "PRIDE Learner"
             outof = 100
         }
         else {
-            level = "Expert"
+            level = "PRIDE Master"
             outof = total
         }
         var toachieve = outof - total
