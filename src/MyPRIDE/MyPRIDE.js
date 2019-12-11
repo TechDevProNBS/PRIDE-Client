@@ -87,7 +87,7 @@ export default class MyPRIDE extends React.Component {
                 <Link to='/Achievements'>Milestones</Link>
               </div>
 
-              <div class="col-sm-10" style={{ position: "relative", height: "432px",  overflow: "scroll", }}>
+              <div class="col-sm-10" style={{ position: "relative", height: "432px",  overflowY: "scroll",}}>
                 <Route exact path='/PRIDEWall' component={PRIDEWall} />
                 <Route exact path='/MyCards' component={MyCards} />
                 <Route exact path='/MySentCards' component={MySentCards} />
