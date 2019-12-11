@@ -75,6 +75,21 @@
   border-radius: 100%;
 }
 
+.carousel-indicators{
+   position: absolute;
+    right: 0;
+    bottom: 0px;
+    top: 85px;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
 .carousel-indicators .active {
   background-color: #ed1c24;
 }
@@ -88,15 +103,26 @@
   background-color: #004a8f;
   height: 60px;
   width: 60px;
+  top: 6px;
+  position: relative;
 }
 
 .carousel-control-prev-icon{
   background-color: #004a8f;
   height: 60px;
   width: 60px;
+  top: 6px;
+  position: relative;
 }
 
-/* .button1 {
+.carousel-caption{
+    color: #303030;
+    font-size: 2vw;
+    height: auto;
+    max-height: 101px;
+}
+
+.button1 {
   display: inline-block;
   padding: 10px 20px;
   font-size: 20%;
@@ -110,16 +136,16 @@
   border-radius: 15px;
   box-shadow: 0 9px #004a8f;
   margin-left: 37px;
-} */
-/* 
+} 
+ 
 .button1:hover {
   background-color: #004a8f;
-} */
-/* .button1:active {
+} 
+.button1:active {
   background-color: #004a8f;
   box-shadow: 0 5px darkblue;
   transform: translateY(4px);
-} */
+}
 
 .card-img employee-image {
   border-radius: 15px;
