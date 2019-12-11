@@ -27,9 +27,7 @@ export default class AchievementCarousel extends Component {
           return (
             <Carousel.Item key={`${each.name},${each.achievement}`}>
               <img
-                  className="d-block w-100"
-                  src="holder.js/800x400?text=First slide&bg=373940"
-                  alt=""  
+                  className="d-block w-100" 
               />
               <Carousel.Caption>
                 <p>Congratulations to {each.name} for achieving the milestone '{each.achievement}'</p>

@@ -36,8 +36,7 @@ export default class ShowAllThisEmployee extends Component {
 
   render() {
     return (
-
-        <div>
+        <div class="col-sm-10">
           <h1>My Sent Cards</h1>
           <div className="container">
             <div className="row">

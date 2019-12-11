@@ -66,11 +66,7 @@ export default class MyPRIDE extends React.Component {
           <div className="container-fluid text-center">
             <div className="row content">
               <div className="col-sm-2 sidenav">
-
-                <div>
-                </div>
-                { /* Progress Card */}
-                <div>
+                <div> 
                   <div className="image-wrapper">
                     <img className="scale-image" src="Capture.PNG" alt="Capture"></img>
                     <ProgressBar style={{border:'solid', borderWidth:'1px'}}>
@@ -91,13 +87,11 @@ export default class MyPRIDE extends React.Component {
                 <Link to='/Achievements'>Milestones</Link>
               </div>
 
-              <div>
+              <div class="col-sm-10" style={{ position: "relative", height: "432px",  overflow: "scroll", }}>
                 <Route exact path='/PRIDEWall' component={PRIDEWall} />
                 <Route exact path='/MyCards' component={MyCards} />
                 <Route exact path='/MySentCards' component={MySentCards} />
-                <div className="col-8 text-left">
-                  <Route exact path='/Achievements' component={Achievements} />
-                </div>
+                <Route exact path='/Achievements' component={Achievements} />
               </div>
             </div>
           </div>
