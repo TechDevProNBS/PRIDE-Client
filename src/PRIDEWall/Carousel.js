@@ -30,7 +30,7 @@ export default class AchievementCarousel extends Component {
                   className="d-block w-100" 
               />
               <Carousel.Caption>
-                <p>Congratulations to {each.name} for achieving the milestone '{each.achievement}'</p>
+                <p>Congratulations to {each.name} for achieving the milestone '{each.achievement}'!</p>
               </Carousel.Caption>
             </Carousel.Item>
           )
