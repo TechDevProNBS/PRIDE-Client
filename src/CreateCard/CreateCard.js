@@ -127,18 +127,30 @@ export default class CreateCard extends Component {
 
     render() {
         return (
-            <div style={{ position: "relative" }}>
-                <input type="text" id="category" readOnly style={{ visibility: "collapse" }} />
-                <input type="text" id="sempno" readOnly style={{ visibility: "collapse" }} value="P654321" />
+            <div style={{position: "relative", top: "-11px" }}>
+                {/* <input type="text" id="category" readOnly style={{ visibility: "collapse" }} />
+                <input type="text" id="sempno" readOnly style={{ visibility: "collapse" }} value="P654321" /> */}
                 <table id="table" className="table" >
                     <tbody>
                         <tr><td>To: <input id="rempno" placeholder="Their Employee Number" onChange={() => this.checkRempnoRT()}></input><span id="rempnoErr" style={{ color: "#ed1c24" }}></span></td></tr>
-                        <tr><td>Recognising:
-                        <span className="dropdown"> <button id="P" onClick={() => this.P()} className="button1">P</button> <span className="dropdown-content"> <p>Putting members first.</p></span> </span>
+                        <tr><td>
+                            Recognising:
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col">
+                                <span className="dropdown"> <button id="P" onClick={() => this.P()} className="button1">P</button> <span className="dropdown-content"> <p>Putting members first.</p></span> </span>
                             <span className="dropdown"> <button id="R" onClick={() => this.R()} className="button1">R</button> <span className="dropdown-content"> <p>Rising to the challenge.</p></span> </span>
                             <span className="dropdown"> <button id="I" onClick={() => this.I()} className="button1">I</button> <span className="dropdown-content"> <p>Inspiring trust.</p></span>  </span>
                             <span className="dropdown"> <button id="D" onClick={() => this.D()} className="button1">D</button> <span className="dropdown-content"> <p>Doing the right thing.</p></span> </span>
                             <span className="dropdown"> <button id="E" onClick={() => this.E()} className="button1">E</button> <span className="dropdown-content"> <p>Excelling at relationships.</p></span> </span>
+                            </div>
+                                </div>
+                            </div>
+                        {/* <span className="dropdown"> <button id="P" onClick={() => this.P()} className="button1">P</button> <span className="dropdown-content"> <p>Putting members first.</p></span> </span>
+                            <span className="dropdown"> <button id="R" onClick={() => this.R()} className="button1">R</button> <span className="dropdown-content"> <p>Rising to the challenge.</p></span> </span>
+                            <span className="dropdown"> <button id="I" onClick={() => this.I()} className="button1">I</button> <span className="dropdown-content"> <p>Inspiring trust.</p></span>  </span>
+                            <span className="dropdown"> <button id="D" onClick={() => this.D()} className="button1">D</button> <span className="dropdown-content"> <p>Doing the right thing.</p></span> </span>
+                            <span className="dropdown"> <button id="E" onClick={() => this.E()} className="button1">E</button> <span className="dropdown-content"> <p>Excelling at relationships.</p></span> </span> */}
                         </td></tr>
                         <tr><td>
                             Comment: <textarea className="textbox" id="message" onChange={() => this.checkMessageRT()} placeholder="Your Message"></textarea><span id="messageErr" style={{ color: "#ed1c24" }}></span></td></tr>
