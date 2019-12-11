@@ -47,7 +47,7 @@
 }
 
 .d-block {
-  height: 125px;
+  height: 100px;
   background-color: #efedee;
   margin-top: 25px;
   text-align: center;
@@ -81,7 +81,7 @@
 
 .carousel-caption {
   color: #303030;
-  font-size: large;
+ font-size: medium;
 }
 
 .carousel-control-next-icon{
