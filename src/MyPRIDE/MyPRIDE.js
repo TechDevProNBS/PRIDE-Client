@@ -56,6 +56,7 @@ export default class MyPRIDE extends React.Component {
     var toachieve = outof - total
     var label = total+"/"+outof
     var experience = { "level": level, "pointsoutof": outof, "pointsachieved": total, "pointstoachieve": toachieve, "label":label}
+    
     return experience
   }
   render() {
