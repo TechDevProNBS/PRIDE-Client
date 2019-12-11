@@ -47,11 +47,13 @@ export default class ShowAllThisEmployee extends Component {
                     <div className="card mb-3 new-card">
                       <div className="row no-gutters">
                         <div className="col-md-4">
-                          <img
-                            src={each.picurl}
-                            className="card-img employee-image"
-                            alt="Manager"
-                          />
+                        <img
+                          src="female-silhouette.png"
+                          height="60px"
+                          width="40px"
+                          className="card-img employee-image"
+                          alt="Manager"
+                        />
                           <div className="prideletter">
                             <h1>
                               <b>{each.category}</b>
