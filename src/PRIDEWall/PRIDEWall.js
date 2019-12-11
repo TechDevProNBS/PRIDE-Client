@@ -8,7 +8,7 @@ export default class PRIDEWall extends React.Component {
   render() {
     return (
       <div>
-        <div style={{ position: "relative", height: "525px",  overflowY: "scroll", }}>
+        <div style={{ position: "relative", height: "460px",  overflowY: "scroll", }}>
           <ShowAllThisMonth/>
         </div>
         <div style={{ position: "fixed", bottom: "0", width: "100%"}}>
