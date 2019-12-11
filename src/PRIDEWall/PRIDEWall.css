@@ -42,7 +42,7 @@
   border-color: #303030;
   border-width: 1px;
   border-radius: 3px;
-  width: 60% !important;
+  width: 55% !important;
   margin: 15px;
 }
 
@@ -100,14 +100,15 @@
 }
 
 .carousel-control-next-icon{
-  background-color: #303030;
+  background-color: #004a8f;
   height: 60px;
   width: 60px;
   top: 6px;
   position: relative;
 }
+
 .carousel-control-prev-icon{
-  background-color: #303030;
+  background-color: #004a8f;
   height: 60px;
   width: 60px;
   top: 6px;

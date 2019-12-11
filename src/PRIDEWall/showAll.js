@@ -47,7 +47,7 @@ export default class ShowAllThisMonth extends Component {
                       <div className="col-md-8">
                         <div className="card-body">
                           <h5 className="card-title">
-                            <b>{each.rempno}</b>
+                            <b>{each.emp_name}</b>
                           </h5>
                           <p className="card-text">{each.message}</p>
                         </div>
