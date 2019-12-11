@@ -110,7 +110,7 @@ export default class CreateCard extends Component {
 
     render() {
         return (
-            <div style={{position: "relative", top: "70px"}}>
+            <div style={{position: "relative"}}>
                 <input type="text" id="category" readOnly style={{ visibility: "collapse" }} />
                 <input type="text" id="sempno" readOnly style={{ visibility: "collapse" }} value="P654321" />
                 <table id="table" className="table" >
