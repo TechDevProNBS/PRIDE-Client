@@ -9,6 +9,23 @@ export default class CreateCard extends Component {
         };
     }
 
+    checkRempnoRT() {
+        let checkRempno = document.getElementById("rempno").value;
+        if (checkRempno.search(/^[PCT][0-9]{5,6}$/) == 0) {
+            document.getElementById("rempnoErr").innerHTML = ""
+            document.getElementById("rempno").style.border = "2px solid green";
+        }
+    }
+
+    checkMessageRT() {
+        let checkMessage = document.getElementById("message").value;
+        if (checkMessage.length > 10) {
+            document.getElementById("messageErr").innerHTML = "";
+            document.getElementById("message").style.border = "2px solid green";
+        }
+    }
+
+
     addCard() {
         let checkRempno = document.getElementById("rempno").value;
         // let checkRmempno = document.getElementById("rmempno").value;
@@ -17,7 +34,7 @@ export default class CreateCard extends Component {
         let checkMessage = document.getElementById("message").value;
 
         if (checkRempno.search(/^[PCT][0-9]{5,6}$/) == -1) {
-            document.getElementById("rempnoErr").innerHTML = "Employee numbers must begin with P (Permanent) or C (Contractor) or T (Temp) and be followed by 5 or 6 digits"
+            document.getElementById("rempnoErr").innerHTML = "  -  Employee numbers must begin with P (Permanent) or C (Contractor) or T (Temp) and be followed by 5 or 6 digits"
             document.getElementById("rempno").style.border = "2px solid red";
         }
 
@@ -32,8 +49,8 @@ export default class CreateCard extends Component {
             document.getElementById("E").style.backgroundColor = "#ed1c24";
             alert("Please ensure you have selected one of the PRIDE values.");
         }
-        else if (checkMessage.length<1){
-            alert("Please ensure you are writing a message to explain why the card is being submitted, up to 500 characters.")
+        else if (checkMessage.length < 11) {
+            document.getElementById("messageErr").innerHTML = "  -  Please ensure you are writing a message to explain why the card is being submitted, up to 500 characters.";
             document.getElementById("message").style.border = "2px solid red";
         }
         else {
@@ -110,12 +127,12 @@ export default class CreateCard extends Component {
 
     render() {
         return (
-            <div style={{position: "relative"}}>
+            <div style={{ position: "relative" }}>
                 <input type="text" id="category" readOnly style={{ visibility: "collapse" }} />
                 <input type="text" id="sempno" readOnly style={{ visibility: "collapse" }} value="P654321" />
                 <table id="table" className="table" >
                     <tbody>
-                        <tr><td>To: <input id="rempno" placeholder="Their Employee Number"></input><span id="rempnoErr"></span></td></tr>
+                        <tr><td>To: <input id="rempno" placeholder="Their Employee Number" onChange={() => this.checkRempnoRT()}></input><span id="rempnoErr" style={{ color: "#ed1c24" }}></span></td></tr>
                         <tr><td>Recognising:
                         <span className="dropdown"> <button id="P" onClick={() => this.P()} className="button1">P</button> <span className="dropdown-content"> <p>Putting members first.</p></span> </span>
                             <span className="dropdown"> <button id="R" onClick={() => this.R()} className="button1">R</button> <span className="dropdown-content"> <p>Rising to the challenge.</p></span> </span>
@@ -124,7 +141,7 @@ export default class CreateCard extends Component {
                             <span className="dropdown"> <button id="E" onClick={() => this.E()} className="button1">E</button> <span className="dropdown-content"> <p>Excelling at relationships.</p></span> </span>
                         </td></tr>
                         <tr><td>
-                            Comment: <textarea className="textbox" id="message" placeholder="Your Message"></textarea></td></tr>
+                            Comment: <textarea className="textbox" id="message" onChange={() => this.checkMessageRT()} placeholder="Your Message"></textarea><span id="messageErr" style={{ color: "#ed1c24" }}></span></td></tr>
                         <tr>
                             <td><button id="newbutton" onClick={() => this.addCard()}>Create New Card</button></td>
                         </tr>
