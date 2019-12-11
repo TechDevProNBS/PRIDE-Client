@@ -60,13 +60,13 @@ export default class MyPRIDE extends React.Component {
   }
   render() {
     return (
-      <div name="apples">
+      <div name="apples" style={{overflowY: "scroll"}}>
         <span>Welcome Isaac Douglas!</span>
         <Router>
           <div className="container-fluid text-center">
-            <div className="row content">
-              <div className="col-sm-2 sidenav">
-                <div> 
+            <div class="row content">
+              <div class="col-12 col-md-2 sidenav">
+                <div > 
                   <div className="image-wrapper">
                     <img className="scale-image" src="Capture.PNG" alt="Capture"></img>
                     <ProgressBar style={{border:'solid', borderWidth:'1px'}}>
@@ -87,7 +87,7 @@ export default class MyPRIDE extends React.Component {
                 <Link to='/Achievements'>Milestones</Link>
               </div>
 
-              <div class="col-sm-6" style={{ position: "relative", height: "432px",  overflowY: "scroll",}}>
+              <div class="col-sm-6" style={{ position: "relative", height: "432px"}}>
                 <Route exact path='/PRIDEWall' component={PRIDEWall} />
                 <Route exact path='/MyCards' component={MyCards} />
                 <Route exact path='/MySentCards' component={MySentCards} />

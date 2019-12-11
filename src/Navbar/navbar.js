@@ -7,7 +7,7 @@ const NavBar = (props) => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                <Nav.Link href="http://localhost:3000">Login</Nav.Link>
+                    <Nav.Link href="http://localhost:3000">Login</Nav.Link>
                     <Nav.Link href="http://localhost:3000/PRIDEWall">Pride Wall</Nav.Link>
                     <Nav.Link href="http://localhost:3000/CreateCard">Send a PRIDE card</Nav.Link>
                     <Nav.Link href="http://localhost:3000/MyPRIDEWall">MyPRIDE</Nav.Link>

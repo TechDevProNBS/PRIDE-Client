@@ -127,7 +127,7 @@ export default class CreateCard extends Component {
 
     render() {
         return (
-            <div style={{position: "relative", top: "-11px" }}>
+            <div style={{position: "relative", top: "-11px", overflowY: "scroll"}}>
                 {/* <input type="text" id="category" readOnly style={{ visibility: "collapse" }} />
                 <input type="text" id="sempno" readOnly style={{ visibility: "collapse" }} value="P654321" /> */}
                 <table id="table" className="table" >
@@ -138,7 +138,7 @@ export default class CreateCard extends Component {
                             <div className="container">
                                 <div className="row">
                                     <div className="col">
-                                <span className="dropdown"> <button id="P" onClick={() => this.P()} className="button1">P</button> <span className="dropdown-content"> <p>Putting members first.</p></span> </span>
+                            <span className="dropdown"> <button id="P" onClick={() => this.P()} className="button1">P</button> <span className="dropdown-content"> <p>Putting members first.</p></span> </span>
                             <span className="dropdown"> <button id="R" onClick={() => this.R()} className="button1">R</button> <span className="dropdown-content"> <p>Rising to the challenge.</p></span> </span>
                             <span className="dropdown"> <button id="I" onClick={() => this.I()} className="button1">I</button> <span className="dropdown-content"> <p>Inspiring trust.</p></span>  </span>
                             <span className="dropdown"> <button id="D" onClick={() => this.D()} className="button1">D</button> <span className="dropdown-content"> <p>Doing the right thing.</p></span> </span>
