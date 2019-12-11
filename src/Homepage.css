@@ -202,7 +202,7 @@ body {
       color: white;
       width: 80px;
       height: 60px;
-      margin: 3px;
+      margin: 15px;
   }
 
   .new-card{
@@ -215,8 +215,8 @@ body {
     border-style: solid;
     border-color: #303030;
     border-width: 1px;
-    width: 70%!important;
-    margin: 3px
+    width: 60%!important;
+    margin: 15px
   }
   /* example textbox*/
   /* New GridLayout */
