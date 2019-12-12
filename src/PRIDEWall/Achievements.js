@@ -5,7 +5,9 @@ export default class Achievements extends Component {
     constructor() {
         super()
         this.state = {
-            records: []
+            records: [],
+            username:sessionStorage.getItem("username"),
+            empName:sessionStorage.getItem("empName")
         };
     }
 
@@ -20,7 +22,11 @@ export default class Achievements extends Component {
      */
 
     componentDidMount = () => {
-        fetch('http://localhost:5000/cards/cardNumbers')
+        let empno=this.state.username
+        let data = {
+            rempno: empno
+          }
+        fetch('http://localhost:5000/cards/cardNumbers', {method: 'POST',headers: {'Content-Type': 'application/json',},body: JSON.stringify(data)})
             .then(response => response.json())
             .then(data => {
                 let p = data.P;
@@ -29,9 +35,18 @@ export default class Achievements extends Component {
                 let d = data.D;
                 let e = data.E;
 
-                fetch(`http://localhost:9001/emp_achievements/P430221/${p}/${r}/${i}/${d}/${e}`)
+                console.log(p);
+                console.log(r);
+                console.log(i);
+                console.log(d);
+                console.log(e);
+                console.log(empno);
+
+                
+                fetch(`http://localhost:9001/emp_achievements/${empno}/${p}/${r}/${i}/${d}/${e}`)
                     .then(response => response.json())
                     .then(data => {
+                        console.log(data);
                         this.setState({
                             records: data
                         })
@@ -60,6 +75,7 @@ export default class Achievements extends Component {
         }
         var toachieve = outof - total
         var experience = { "level": level, "pointsoutof": outof, "pointsachieved": total, "pointstoachieve": toachieve }
+        console.log(experience);
         return experience
     }
 

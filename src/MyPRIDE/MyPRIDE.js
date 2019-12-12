@@ -10,21 +10,34 @@ export default class MyPRIDE extends React.Component {
   constructor() {
     super()
     this.state = {
-      records: []
+      records: [],
+      username:sessionStorage.getItem("username"),
+      empName:sessionStorage.getItem("empName")
     };
   }
 
   componentDidMount = () => {
-    fetch('http://localhost:5000/cards/cardNumbers')
-      .then(response => response.json())
-      .then(data => {
-        let p = data.P;
-        let r = data.R;
-        let i = data.I;
-        let d = data.D;
-        let e = data.E;
+    let empno=this.state.username
+    let data = {
+        rempno: empno
+      }
+    fetch('http://localhost:5000/cards/cardNumbers', {method: 'POST',headers: {'Content-Type': 'application/json',},body: JSON.stringify(data)})
+        .then(response => response.json())
+        .then(data => {
+            let p = data.P;
+            let r = data.R;
+            let i = data.I;
+            let d = data.D;
+            let e = data.E;
 
-        fetch(`http://localhost:9001/emp_achievements/P430221/${p}/${r}/${i}/${d}/${e}`)
+            console.log(p);
+            console.log(r);
+            console.log(i);
+            console.log(d);
+            console.log(e);
+            console.log(empno);
+
+        fetch(`http://localhost:9001/emp_achievements/${empno}/${p}/${r}/${i}/${d}/${e}`)
           .then(response => response.json())
           .then(data => {
             this.setState({
@@ -62,7 +75,7 @@ export default class MyPRIDE extends React.Component {
   render() {
     return (
       <div style={{overflowY: "scroll"}}>
-        <span>Welcome Isaac Douglas!</span>
+  <span>Welcome {this.state.empName} ({this.state.username})!</span>
         <Router>
           <div className="container-fluid text-center">
             <div class="row content">

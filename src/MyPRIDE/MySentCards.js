@@ -6,13 +6,15 @@ export default class ShowAllThisEmployee extends Component {
   constructor() {
     super()
     this.state = {
-      records: []
+      records: [],
+      username:sessionStorage.getItem("username"),
+      empName:sessionStorage.getItem("empName")
     };
   }
 
   componentDidMount = () => {
     let data = {
-      "sempno": "P430221"
+      sempno: this.state.username
     }
     fetch('http://localhost:5000/cards/mySentCards'
       , {

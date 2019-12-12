@@ -5,7 +5,9 @@ export default class CreateCard extends Component {
     constructor() {
         super()
         this.state = {
-            users: []
+            users: [],
+            username:sessionStorage.getItem("username"),
+            empName:sessionStorage.getItem("empName")
         };
     }
 
@@ -29,7 +31,7 @@ export default class CreateCard extends Component {
     addCard() {
         let checkRempno = document.getElementById("rempno").value;
         // let checkRmempno = document.getElementById("rmempno").value;
-        let checkSempno = document.getElementById("sempno").value;
+        let checkSempno = sessionStorage.getItem("username");
         let checkCategory = document.getElementById("category").value;
         let checkMessage = document.getElementById("message").value;
 
@@ -58,7 +60,7 @@ export default class CreateCard extends Component {
                 "rempno": checkRempno,
                 // "rname": "Dummy Data Receiver", //document.getElementById("rname").value,
                 "rmempno": "P123456", //document.getElementById("rmempno").value,
-                "sempno": document.getElementById("sempno").value,
+                "sempno": checkSempno,
                 // "sname": "Dummy Data Sender", //document.getElementById("sname").value,
                 "category": document.getElementById("category").value,
                 "senddate": moment().format("YYYY-MM-DD"),
@@ -129,7 +131,6 @@ export default class CreateCard extends Component {
         return (
             <div style={{position: "relative", top: "-11px", overflowY: "scroll"}}>
                  <input type="text" id="category" readOnly style={{ visibility: "collapse" }} />
-                 <input type="text" id="sempno" readOnly style={{ visibility: "collapse" }} value="P654321" /> 
                 <table id="table" className="table" >
                     <tbody>
                         <tr><td>To: <input id="rempno" placeholder="Their Employee Number" onChange={() => this.checkRempnoRT()}></input><span id="rempnoErr" style={{ color: "#ed1c24" }}></span></td></tr>
