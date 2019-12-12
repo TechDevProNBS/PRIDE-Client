@@ -5,9 +5,7 @@ pipeline {
 
 
     stage('Build') {
-	steps {
-
-	        sh 'mvn package'
+	steps {	        
 		sh 'docker build -t="pride-frontend" .'
 		echo "Build successful"
 	           }
