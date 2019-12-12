@@ -15,7 +15,7 @@ export default class MyPRIDE extends React.Component {
   }
 
   componentDidMount = () => {
-    fetch('http://localhost:5000/cards/cardNumbers')
+    fetch('http://10.0.2.11:5000/cards/cardNumbers')
       .then(response => response.json())
       .then(data => {
         let p = data.P;
@@ -24,7 +24,7 @@ export default class MyPRIDE extends React.Component {
         let d = data.D;
         let e = data.E;
 
-        fetch(`http://localhost:9001/emp_achievements/P430221/${p}/${r}/${i}/${d}/${e}`)
+        fetch(`http://10.0.2.11:9001/emp_achievements/P430221/${p}/${r}/${i}/${d}/${e}`)
           .then(response => response.json())
           .then(data => {
             this.setState({
