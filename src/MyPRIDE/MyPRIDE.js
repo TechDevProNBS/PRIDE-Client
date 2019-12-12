@@ -64,7 +64,7 @@ export default class MyPRIDE extends React.Component {
       <div>
         <Router>
           <div className="container-fluid text-center">
-            <div class="row content" style={{overflowY:'scroll'}}>
+            <div class="row content" style={{overflowY:'scroll', height:"418px"}}>
               <div class="col-12 col-md-2 sidenav">
                 <div > 
                   <div className="image-wrapper">
