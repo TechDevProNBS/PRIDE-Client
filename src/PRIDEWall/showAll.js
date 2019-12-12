@@ -11,7 +11,7 @@ export default class ShowAllThisMonth extends Component {
   }
 
   componentDidMount = () => {
-    fetch("/cards/home")
+    fetch("http://localhost:5000/cards/home")
       .then(response => response.json())
       .then(data => {
         this.setState({
