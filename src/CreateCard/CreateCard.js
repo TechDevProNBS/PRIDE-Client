@@ -65,7 +65,7 @@ export default class CreateCard extends Component {
                 "message": document.getElementById("message").value,
                 "picurl": "www.pic.co.uk/dummydata" //document.getElementById("picurl").value
             }
-            fetch(`/cards/newCard`, {
+            fetch(`http://localhost:5000/cards/newCard`, {
                 method: 'Post',
                 headers: {
                     'Content-Type': 'application/json',
