@@ -14,7 +14,7 @@ export default class ShowAllThisEmployee extends Component {
     let data = {
       "rempno": "P430221"
     }
-    fetch('http://10.0.2.11:5000/cards/user'
+    fetch('/cards/user'
       , {
         method: 'POST',
         headers: {
