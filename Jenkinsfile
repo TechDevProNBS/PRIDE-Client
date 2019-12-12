@@ -24,7 +24,7 @@ pipeline {
             steps {
 		                sh 'docker container kill frontend'
 		                sh 'docker container rm frontend'
-                    sh 'docker run -d -p 9001:9001 --name frontend pride-frontend'
+                    sh 'docker run -d -p 3000:3000 --name frontend pride-frontend'
 				            echo "Deployment has been deployed"
             }
         }
