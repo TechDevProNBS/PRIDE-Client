@@ -11,7 +11,7 @@ export default class AchievementCarousel extends Component {
   }
 
   componentDidMount = () => {
-    fetch("http://localhost:9001/emp_achievements/carousel")
+    fetch("http://10.0.2.11:9001/emp_achievements/carousel")
       .then(response => response.json())
       .then(data => {
         this.setState({
