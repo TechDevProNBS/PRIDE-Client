@@ -6,7 +6,7 @@ import "../Homepage.css";
 export default class MyPRIDEWall extends React.Component{
     render(){
         return(
-            <div style={{position: "relative", overflowY: "scroll"}}>
+            <div style={{position: "relative"}}>
                 <div >
                     <MyPRIDE/>
                 </div>
