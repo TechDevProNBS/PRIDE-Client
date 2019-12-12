@@ -24,7 +24,7 @@ export default class MyPRIDE extends React.Component {
         let d = data.D;
         let e = data.E;
 
-        fetch(`http://10.0.2.11:9001/emp_achievements/P430221/${p}/${r}/${i}/${d}/${e}`)
+        fetch(`http://localhost:9001/emp_achievements/P430221/${p}/${r}/${i}/${d}/${e}`)
           .then(response => response.json())
           .then(data => {
             this.setState({
