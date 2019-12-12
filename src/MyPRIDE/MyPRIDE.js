@@ -15,7 +15,7 @@ export default class MyPRIDE extends React.Component {
   }
 
   componentDidMount = () => {
-    fetch('http://10.0.2.11:5000/cards/cardNumbers')
+    fetch('/cards/cardNumbers')
       .then(response => response.json())
       .then(data => {
         let p = data.P;
