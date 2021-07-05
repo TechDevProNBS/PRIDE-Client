@@ -42,7 +42,7 @@ export default class ShowAllThisEmployee extends Component {
             <div className="row">
               {this.state.records.map(each => {
                 return (
-                  <div className="col-4" key={each.rempno + each.sempno + each.senddate + each.category}>
+                  <div className="col-sm-12 col-md-6 col-lg-4" key={each.rempno + each.sempno + each.senddate + each.category}>
                     <div className="card mb-3 new-card">
                       <div className="row no-gutters">
                         <div className="col-md-4">

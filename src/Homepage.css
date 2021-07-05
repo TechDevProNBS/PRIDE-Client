@@ -35,7 +35,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 2.2vw;
 }
 
 .navbar a:hover {
@@ -63,8 +63,6 @@ body {
 }
 /*next code */
 .button1 {
-
-  
   display: inline-block;
   padding: 15px 25px;
   font-size: 30px;
@@ -218,7 +216,8 @@ body {
     border-style: solid;
     border-color: #303030;
     border-width: 1px;
-    width: 60%!important;
+    /* max-width: 100%!important; */
+    width: 16vw;
     margin: 15px
   }
   /* example textbox*/

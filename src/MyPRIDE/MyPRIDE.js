@@ -64,7 +64,7 @@ export default class MyPRIDE extends React.Component {
       <div>
         <Router>
           <div className="container-fluid text-center">
-            <div class="row content">
+            <div class="row content" style={{overflowY:'scroll', height:"418px"}}>
               <div class="col-12 col-md-2 sidenav">
                 <div > 
                   <div className="image-wrapper">
@@ -87,7 +87,7 @@ export default class MyPRIDE extends React.Component {
                 <Link to='/Achievements'>Milestones</Link>
               </div>
 
-              <div class="col-sm-10" style={{ position: "relative", height: "432px", overflowY: "scroll",}}>
+              <div class="col-sm-10" style={{ position: "relative", height: "0px"}}>
                 <Route exact path='/PRIDEWall' component={PRIDEWall} />
                 <Route exact path='/MyCards' component={MyCards} />
                 <Route exact path='/MySentCards' component={MySentCards} />
